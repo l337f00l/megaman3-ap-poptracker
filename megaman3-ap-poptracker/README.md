@@ -88,14 +88,6 @@ Toggle these on in the **Settings Pop Out** (gear icon) to match your YAML:
 
 ---
 
-## Known Limitations / To-Do
-
-- [ ] Stage Select screen — awaiting updated image with Mega Man in centre
-- [ ] Break Man portrait — awaiting updated image
-- [ ] Wily Stage 4 map — logo removal pending
-
----
-
 ## Credits
 
 - Pack created for use with the [Mega Man 3 Archipelago](https://archipelago.gg/) world
