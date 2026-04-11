@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Hard Man Stage",
+    "access_rules": [
+      "hard_man_1"
+    ],
+    "children": [
+      {
+        "name": "Hard Man Boss Location",
+        "access_rules": [
+          "hard_man_1"
+        ],
+        "sections": [
+          {
+            "name": "Hard Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hard_man",
+            "x": 3540,
+            "y": 855
+          }
+        ]
+      },
+      {
+        "name": "Hard Man E-Tank",
+        "access_rules": [
+          "hard_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Hard Man E-Tank",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hard_man",
+            "x": 3476,
+            "y": 855
+          }
+        ]
+      },
+      {
+        "name": "Hard Man Health Energy (L)",
+        "access_rules": [
+          "hard_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Hard Man Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hard_man",
+            "x": 3600,
+            "y": 855
+          }
+        ]
+      },
+      {
+        "name": "Hard Man Health Energy (L) 2",
+        "access_rules": [
+          "hard_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Hard Man Health Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hard_man",
+            "x": 3600,
+            "y": 919
+          }
+        ]
+      },
+      {
+        "name": "Hard Man Health Energy (L) 3",
+        "access_rules": [
+          "hard_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Hard Man Health Energy (L) 3",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "hard_man",
+            "x": 3600,
+            "y": 983
+          }
+        ]
+      }
+    ]
+  }
+]

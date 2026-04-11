@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Magnet Man Stage",
+    "access_rules": [
+      "magnet_man_1"
+    ],
+    "children": [
+      {
+        "name": "Magnet Man Boss Location",
+        "access_rules": [
+          "magnet_man_1"
+        ],
+        "sections": [
+          {
+            "name": "Magnet Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "magnet_man",
+            "x": 3028,
+            "y": 855
+          }
+        ]
+      },
+      {
+        "name": "Magnet Man Weapon Energy (L)",
+        "access_rules": [
+          "magnet_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Magnet Man Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "magnet_man",
+            "x": 3088,
+            "y": 919
+          }
+        ]
+      },
+      {
+        "name": "Magnet Man Health Energy (L)",
+        "access_rules": [
+          "magnet_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Magnet Man Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "magnet_man",
+            "x": 3088,
+            "y": 855
+          }
+        ]
+      }
+    ]
+  }
+]

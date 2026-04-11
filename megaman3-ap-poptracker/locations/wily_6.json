@@ -1,0 +1,139 @@
+[
+  {
+    "name": "Wily 6",
+    "access_rules": [
+      "@Wily 5/Wily 5 Boss"
+    ],
+    "map_locations": [
+      {
+        "map": "wily_6",
+        "x": 929,
+        "y": 138
+      }
+    ],
+    "sections": [
+      {
+        "name": "Wily 6 Boss",
+        "item_count": 1,
+        "access_rules": []
+      }
+    ],
+    "children": [
+      {
+        "name": "Wily 6 E-Tank",
+        "access_rules": [
+          "@Wily 5/Wily 5 Boss"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 6 E-Tank",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_6",
+            "x": 865,
+            "y": 138
+          }
+        ]
+      },
+      {
+        "name": "Wily 6 1-Up",
+        "access_rules": [
+          "@Wily 5/Wily 5 Boss"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 6 1-Up",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_6",
+            "x": 865,
+            "y": 202
+          }
+        ]
+      },
+      {
+        "name": "Wily 6 Health Energy (L)",
+        "access_rules": [
+          "@Wily 5/Wily 5 Boss"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 6 Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_6",
+            "x": 993,
+            "y": 138
+          }
+        ]
+      },
+      {
+        "name": "Wily 6 Weapon Energy (L)",
+        "access_rules": [
+          "@Wily 5/Wily 5 Boss"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 6 Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_6",
+            "x": 1056,
+            "y": 138
+          }
+        ]
+      },
+      {
+        "name": "Wily 6 Weapon Energy (L) 2",
+        "access_rules": [
+          "@Wily 5/Wily 5 Boss"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 6 Weapon Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_6",
+            "x": 1056,
+            "y": 202
+          }
+        ]
+      }
+    ]
+  }
+]

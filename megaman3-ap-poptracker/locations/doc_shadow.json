@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Doc Robot Shadow Man Stage",
+    "access_rules": [
+      "stage_doc_shadow"
+    ],
+    "children": [
+      {
+        "name": "Doc Robot Shadow Man - Heat Man Boss",
+        "access_rules": [
+          "stage_doc_shadow"
+        ],
+        "sections": [
+          {
+            "name": "Doc Robot Shadow Man - Heat Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_shadow",
+            "x": 2515,
+            "y": 1586
+          }
+        ]
+      },
+      {
+        "name": "Doc Robot Shadow Man - Wood Man Boss",
+        "access_rules": [
+          "stage_doc_shadow"
+        ],
+        "sections": [
+          {
+            "name": "Doc Robot Shadow Man - Wood Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_shadow",
+            "x": 5072,
+            "y": 1593
+          }
+        ]
+      },
+      {
+        "name": "Doc Shadow Health Energy (L)",
+        "access_rules": [
+          "stage_doc_shadow"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Shadow Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_shadow",
+            "x": 2579,
+            "y": 1586
+          }
+        ]
+      }
+    ]
+  }
+]

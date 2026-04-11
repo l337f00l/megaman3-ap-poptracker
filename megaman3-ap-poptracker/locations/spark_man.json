@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Spark Man Stage",
+    "access_rules": [
+      "spark_man_1"
+    ],
+    "children": [
+      {
+        "name": "Spark Man Boss Location",
+        "access_rules": [
+          "spark_man_1"
+        ],
+        "sections": [
+          {
+            "name": "Spark Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spark_man",
+            "x": 3540,
+            "y": 1335
+          }
+        ]
+      },
+      {
+        "name": "Spark Man Health Energy (L)",
+        "access_rules": [
+          "spark_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Spark Man Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spark_man",
+            "x": 3600,
+            "y": 1335
+          }
+        ]
+      },
+      {
+        "name": "Spark Man Weapon Energy (L)",
+        "access_rules": [
+          "spark_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Spark Man Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spark_man",
+            "x": 3600,
+            "y": 1399
+          }
+        ]
+      }
+    ]
+  }
+]

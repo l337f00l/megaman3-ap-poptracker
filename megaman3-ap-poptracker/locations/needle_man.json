@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Needle Man Stage",
+    "access_rules": [
+      "needle_man_1"
+    ],
+    "children": [
+      {
+        "name": "Needle Man Boss Location",
+        "access_rules": [
+          "needle_man_1"
+        ],
+        "sections": [
+          {
+            "name": "Needle Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "needle_man",
+            "x": 3534,
+            "y": 240
+          }
+        ]
+      },
+      {
+        "name": "Needle Man E-Tank",
+        "access_rules": [
+          "needle_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Needle Man E-Tank",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "needle_man",
+            "x": 3470,
+            "y": 240
+          }
+        ]
+      },
+      {
+        "name": "Needle Man Weapon Energy (L)",
+        "access_rules": [
+          "needle_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Needle Man Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "needle_man",
+            "x": 3600,
+            "y": 240
+          }
+        ]
+      }
+    ]
+  }
+]

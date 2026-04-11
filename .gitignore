@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
+
+# Release zips (built from CI or manually)
+*.zip
+
+# Temp files
+*.tmp
+*.bak

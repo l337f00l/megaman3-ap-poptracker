@@ -1,0 +1,168 @@
+[
+  {
+    "name": "Gemini Man Stage",
+    "access_rules": [
+      "gemini_man_1"
+    ],
+    "children": [
+      {
+        "name": "Gemini Man Boss Location",
+        "access_rules": [
+          "gemini_man_1"
+        ],
+        "sections": [
+          {
+            "name": "Gemini Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gemini_man",
+            "x": 5844,
+            "y": 151
+          }
+        ]
+      },
+      {
+        "name": "Gemini Man E-Tank 1",
+        "access_rules": [
+          "gemini_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Gemini Man E-Tank 1",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gemini_man",
+            "x": 5780,
+            "y": 151
+          }
+        ]
+      },
+      {
+        "name": "Gemini Man E-Tank 2",
+        "access_rules": [
+          "gemini_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Gemini Man E-Tank 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gemini_man",
+            "x": 5716,
+            "y": 151
+          }
+        ]
+      },
+      {
+        "name": "Gemini Man Weapon Energy (L)",
+        "access_rules": [
+          "gemini_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Gemini Man Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gemini_man",
+            "x": 5904,
+            "y": 215
+          }
+        ]
+      },
+      {
+        "name": "Gemini Man Weapon Energy (L) 2",
+        "access_rules": [
+          "gemini_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Gemini Man Weapon Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gemini_man",
+            "x": 5904,
+            "y": 279
+          }
+        ]
+      },
+      {
+        "name": "Gemini Man Weapon Energy (L) 3",
+        "access_rules": [
+          "gemini_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Gemini Man Weapon Energy (L) 3",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gemini_man",
+            "x": 5904,
+            "y": 343
+          }
+        ]
+      },
+      {
+        "name": "Gemini Man Health Energy (L)",
+        "access_rules": [
+          "gemini_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Gemini Man Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "gemini_man",
+            "x": 5904,
+            "y": 151
+          }
+        ]
+      }
+    ]
+  }
+]

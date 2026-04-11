@@ -1,0 +1,18 @@
+{
+    "name": "Mega Man 3 Archipelago",
+    "game_name": "Mega Man 3",
+    "package_uid": "megaman3-ap",
+    "package_version": "0.1.0",
+    "platform": "nes",
+    "variants": {
+        "standard": {
+            "display_name": "Map Tracker",
+            "flags": [
+                "ap"
+            ],
+            "layout": "tracker_default"
+        }
+    },
+    "min_poptracker_version": "0.23.1",
+    "target_poptracker_version": "0.27.0"
+}

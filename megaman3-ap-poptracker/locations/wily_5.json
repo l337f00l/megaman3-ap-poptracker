@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Wily 5",
+    "access_rules": [
+      "@Wily 4/Wily 4 Boss"
+    ],
+    "map_locations": [
+      {
+        "map": "wily_5",
+        "x": 143,
+        "y": 610
+      }
+    ],
+    "sections": [
+      {
+        "name": "Wily 5 Boss",
+        "item_count": 1,
+        "access_rules": []
+      }
+    ],
+    "children": [
+      {
+        "name": "Wily 5 Weapon Energy (L)",
+        "access_rules": [
+          "@Wily 4/Wily 4 Boss"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 5 Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_5",
+            "x": 271,
+            "y": 610
+          }
+        ]
+      },
+      {
+        "name": "Wily 5 Weapon Energy (L) 2",
+        "access_rules": [
+          "@Wily 4/Wily 4 Boss"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 5 Weapon Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_5",
+            "x": 271,
+            "y": 674
+          }
+        ]
+      }
+    ]
+  }
+]

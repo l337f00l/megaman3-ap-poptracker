@@ -1,0 +1,24 @@
+{
+  "settings_popup": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "4,4",
+        "item_size": 60,
+        "item_h_size": 208,
+        "h_alignment": "left",
+        "rows": [
+          [
+            "etanks_on"
+          ],
+          [
+            "energy_on"
+          ]
+        ]
+      }
+    ]
+  }
+}
