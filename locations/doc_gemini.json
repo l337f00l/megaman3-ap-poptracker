@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Doc Robot Gemini Man Stage",
+    "access_rules": [
+      "stage_doc_gemini"
+    ],
+    "children": [
+      {
+        "name": "Doc Robot Gemini Man - Flash Man Boss",
+        "access_rules": [
+          "stage_doc_gemini"
+        ],
+        "sections": [
+          {
+            "name": "Doc Robot Gemini Man - Flash Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_gemini",
+            "x": 4048,
+            "y": 615
+          }
+        ]
+      },
+      {
+        "name": "Doc Robot Gemini Man - Bubble Man Boss",
+        "access_rules": [
+          "stage_doc_gemini"
+        ],
+        "sections": [
+          {
+            "name": "Doc Robot Gemini Man - Bubble Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_gemini",
+            "x": 6616,
+            "y": 872
+          }
+        ]
+      },
+      {
+        "name": "Doc Gemini Weapon Energy (L)",
+        "access_rules": [
+          "stage_doc_gemini"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Gemini Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_gemini",
+            "x": 4872,
+            "y": 554
+          }
+        ]
+      },
+      {
+        "name": "Doc Gemini Weapon Energy (L) 2",
+        "access_rules": [
+          "stage_doc_gemini"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Gemini Weapon Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_gemini",
+            "x": 5144,
+            "y": 554
+          }
+        ]
+      }
+    ]
+  }
+]

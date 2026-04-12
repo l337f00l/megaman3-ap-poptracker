@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Break Man Stage Select",
+        "children": [
+            {
+                "name": "Break Man",
+                "access_rules": [
+                    "needle_man_2",
+                    "magnet_man_2",
+                    "gemini_man_2",
+                    "hard_man_2",
+                    "top_man_2",
+                    "snake_man_2",
+                    "spark_man_2",
+                    "shadow_man_2",
+                    "stage_doc_needle",
+                    "stage_doc_gemini",
+                    "stage_doc_spark",
+                    "stage_doc_shadow"
+                ],
+                "sections": [
+                    {
+                        "name": "Break Man",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "break_man_select",
+                        "x": 282,
+                        "y": 242
+                    }
+                ]
+            }
+        ]
+    }
+]

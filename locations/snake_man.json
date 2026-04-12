@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Snake Man Stage",
+    "access_rules": [
+      "snake_man_1"
+    ],
+    "children": [
+      {
+        "name": "Snake Man Boss Location",
+        "access_rules": [
+          "snake_man_1"
+        ],
+        "sections": [
+          {
+            "name": "Snake Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "snake_man",
+            "x": 4322,
+            "y": 200
+          }
+        ]
+      },
+      {
+        "name": "Snake Man Health Energy (L)",
+        "access_rules": [
+          "snake_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Snake Man Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "snake_man",
+            "x": 1368,
+            "y": 1274
+          }
+        ]
+      },
+      {
+        "name": "Snake Man Health Energy (L) 2",
+        "access_rules": [
+          "snake_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Snake Man Health Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "snake_man",
+            "x": 1432,
+            "y": 1274
+          }
+        ]
+      },
+      {
+        "name": "Snake Man Health Energy (L) 3",
+        "access_rules": [
+          "snake_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Snake Man Health Energy (L) 3",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "snake_man",
+            "x": 2617,
+            "y": 538
+          }
+        ]
+      }
+    ]
+  }
+]

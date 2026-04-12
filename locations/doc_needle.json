@@ -1,0 +1,303 @@
+[
+  {
+    "name": "Doc Robot Needle Man Stage",
+    "access_rules": [
+      "stage_doc_needle"
+    ],
+    "children": [
+      {
+        "name": "Doc Robot Needle Man - Air Man Boss",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "sections": [
+          {
+            "name": "Doc Robot Needle Man - Air Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 1746,
+            "y": 625
+          }
+        ]
+      },
+      {
+        "name": "Doc Robot Needle Man - Crash Man Boss",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "sections": [
+          {
+            "name": "Doc Robot Needle Man - Crash Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 6354,
+            "y": 147
+          }
+        ]
+      },
+      {
+        "name": "Doc Robot Needle Man E-Tank",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Robot Needle Man E-Tank",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 1249,
+            "y": 860
+          }
+        ]
+      },
+      {
+        "name": "Doc Robot Needle Man 1-Up",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Robot Needle Man 1-Up",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 1273,
+            "y": 1002
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Health Energy (L)",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 1152,
+            "y": 1306
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Health Energy (L) 2",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Health Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 5625,
+            "y": 106
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Weapon Energy (L)",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 1929,
+            "y": 682
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Weapon Energy (L) 2",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Weapon Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 2529,
+            "y": 682
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Weapon Energy (L) 3",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Weapon Energy (L) 3",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 2881,
+            "y": 586
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Weapon Energy (L) 4",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Weapon Energy (L) 4",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 2913,
+            "y": 682
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Weapon Energy (L) 5",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Weapon Energy (L) 5",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 3384,
+            "y": 602
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Weapon Energy (L) 6",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Weapon Energy (L) 6",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 3777,
+            "y": 682
+          }
+        ]
+      },
+      {
+        "name": "Doc Needle Weapon Energy (L) 7",
+        "access_rules": [
+          "stage_doc_needle"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Doc Needle Weapon Energy (L) 7",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "doc_needle",
+            "x": 3784,
+            "y": 410
+          }
+        ]
+      }
+    ]
+  }
+]

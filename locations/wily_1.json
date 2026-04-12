@@ -1,0 +1,300 @@
+[
+  {
+    "name": "Wily 1",
+    "access_rules": [
+      "break_man_1"
+    ],
+    "map_locations": [
+      {
+        "map": "wily_1",
+        "x": 2401,
+        "y": 301
+      }
+    ],
+    "sections": [
+      {
+        "name": "Wily 1 Boss",
+        "item_count": 1,
+        "access_rules": []
+      }
+    ],
+    "children": [
+      {
+        "name": "Wily 1 E-Tank",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 E-Tank",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 1001,
+            "y": 1161
+          }
+        ]
+      },
+	  {
+        "name": "Wily 1 E-Tank 2",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 E-Tank 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 1665,
+            "y": 794
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 1-Up",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 1-Up",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 56,
+            "y": 1148
+          }
+        ]
+      },
+	  {
+        "name": "Wily 1 1-Up 2",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 1-Up 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 1665,
+            "y": 1132
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 Health Energy (L)",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 1768,
+            "y": 922
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 Health Energy (L) 2",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 Health Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 1657,
+            "y": 858
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 Health Energy (L) 3",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 Health Energy (L) 3",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 2169,
+            "y": 330
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 Health Energy (L) 4",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 Health Energy (L) 4",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 2153,
+            "y": 330
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 Weapon Energy (L)",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 1329,
+            "y": 1370
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 Weapon Energy (L) 2",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 Weapon Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 1673,
+            "y": 858
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 Weapon Energy (L) 3",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 Weapon Energy (L) 3",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 2264,
+            "y": 106
+          }
+        ]
+      },
+      {
+        "name": "Wily 1 Weapon Energy (L) 4",
+        "access_rules": [
+          "break_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 1 Weapon Energy (L) 4",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_1",
+            "x": 2280,
+            "y": 106
+          }
+        ]
+      }
+    ]
+  }
+]

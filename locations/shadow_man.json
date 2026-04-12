@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Shadow Man Stage",
+    "access_rules": [
+      "shadow_man_1"
+    ],
+    "children": [
+      {
+        "name": "Shadow Man Boss Location",
+        "access_rules": [
+          "shadow_man_1"
+        ],
+        "sections": [
+          {
+            "name": "Shadow Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "shadow_man",
+            "x": 4302,
+            "y": 1638
+          }
+        ]
+      }
+    ]
+  }
+]

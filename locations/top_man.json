@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Top Man Stage",
+    "access_rules": [
+      "top_man_1"
+    ],
+    "children": [
+      {
+        "name": "Top Man Boss Location",
+        "access_rules": [
+          "top_man_1"
+        ],
+        "sections": [
+          {
+            "name": "Top Man Boss",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "top_man",
+            "x": 3284,
+            "y": 1395
+          }
+        ]
+      },
+      {
+        "name": "Top Man 1-Up",
+        "access_rules": [
+          "top_man_1"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Top Man 1-Up",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "top_man",
+            "x": 1401,
+            "y": 1066
+          }
+        ]
+      },
+      {
+        "name": "Top Man Health Energy (L)",
+        "access_rules": [
+          "top_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Top Man Health Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "top_man",
+            "x": 968,
+            "y": 90
+          }
+        ]
+      },
+      {
+        "name": "Top Man Health Energy (L) 2",
+        "access_rules": [
+          "top_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Top Man Health Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "top_man",
+            "x": 1448,
+            "y": 1066
+          }
+        ]
+      },
+      {
+        "name": "Top Man Health Energy (L) 3",
+        "access_rules": [
+          "top_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Top Man Health Energy (L) 3",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "top_man",
+            "x": 2009,
+            "y": 1530
+          }
+        ]
+      },
+      {
+        "name": "Top Man Weapon Energy (L)",
+        "access_rules": [
+          "top_man_1"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Top Man Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "top_man",
+            "x": 937,
+            "y": 650
+          }
+        ]
+      }
+    ]
+  }
+]

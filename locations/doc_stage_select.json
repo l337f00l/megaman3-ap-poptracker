@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Doc Stage Select",
+        "children": [
+            {
+                "name": "Doc Spark Stage",
+                "access_rules": [
+                    "stage_doc_spark"
+                ],
+                "sections": [
+                    {
+                        "name": "Doc Spark Stage",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_stage_select",
+                        "x": 118,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Doc Needle Stage",
+                "access_rules": [
+                    "stage_doc_needle"
+                ],
+                "sections": [
+                    {
+                        "name": "Doc Needle Stage",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_stage_select",
+                        "x": 442,
+                        "y": 120
+                    }
+                ]
+            },
+            {
+                "name": "Doc Gemini Stage",
+                "access_rules": [
+                    "stage_doc_gemini"
+                ],
+                "sections": [
+                    {
+                        "name": "Doc Gemini Stage",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_stage_select",
+                        "x": 118,
+                        "y": 374
+                    }
+                ]
+            },
+            {
+                "name": "Doc Shadow Stage",
+                "access_rules": [
+                    "stage_doc_shadow"
+                ],
+                "sections": [
+                    {
+                        "name": "Doc Shadow Stage",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "doc_stage_select",
+                        "x": 442,
+                        "y": 374
+                    }
+                ]
+            }
+        ]
+    }
+]

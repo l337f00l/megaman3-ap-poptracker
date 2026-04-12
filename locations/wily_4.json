@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Wily 4",
+    "access_rules": [
+      "@Wily 3/Wily 3 Boss"
+    ],
+    "map_locations": [
+      {
+        "map": "wily_4",
+        "x": 648,
+        "y": 1580
+      }
+    ],
+    "sections": [
+      {
+        "name": "Wily 4 Boss",
+        "item_count": 1,
+        "access_rules": []
+      }
+    ],
+    "children": [
+      {
+        "name": "Wily 4 1-Up",
+        "access_rules": [
+          "@Wily 3/Wily 3 Boss"
+        ],
+        "visibility_rules": [
+          "etanks_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 4 1-Up",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_4",
+            "x": 814,
+            "y": 1288
+          }
+        ]
+      },
+	  {
+        "name": "Wily 4 Weapon Energy (L)",
+        "access_rules": [
+          "@Wily 3/Wily 3 Boss"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 4 Weapon Energy (L)",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_4",
+            "x": 168,
+            "y": 60
+          }
+        ]
+      },
+      {
+        "name": "Wily 4 Weapon Energy (L) 2",
+        "access_rules": [
+          "@Wily 3/Wily 3 Boss"
+        ],
+        "visibility_rules": [
+          "energy_on"
+        ],
+        "sections": [
+          {
+            "name": "Wily 4 Weapon Energy (L) 2",
+            "item_count": 1,
+            "access_rules": []
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "wily_4",
+            "x": 97,
+            "y": 550
+          }
+        ]
+      }
+    ]
+  }
+]
