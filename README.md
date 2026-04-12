@@ -1,4 +1,5 @@
 # Mega Man 3 Archipelago — PopTracker Pack
+![MM3_Pop](images/MM3_Pop.png)
 
 A [PopTracker](https://github.com/black-sliver/PopTracker) pack for the [Mega Man 3 Archipelago](https://archipelago.gg/) randomizer. Supports full autotracking via the Archipelago client and covers all check locations across both YAML configurations.
 
@@ -56,7 +57,6 @@ Toggle these on in the **Settings Pop Out** (gear icon) to match your YAML:
 ---
 
 ## Tracker Layout
-
 ### Items Panel (left)
 | Row | Contents |
 |-----|----------|
