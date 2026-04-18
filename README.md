@@ -1,95 +1,67 @@
-# Mega Man 3 Archipelago — PopTracker Pack
-![MM3_Pop](images/MM3_Pop.png)
+# Mega Man 3 Archipelago PopTracker Pack
 
-A [PopTracker](https://github.com/black-sliver/PopTracker) pack for the [Mega Man 3 Archipelago](https://archipelago.gg/) randomizer. Supports full autotracking via the Archipelago client and covers all check locations across both YAML configurations.
+This is a PopTracker pack for Silvris' [Mega Man 3 Archipelago](https://github.com/alwaysintreble/TheMessengerRandomizerModAP). Install it in your PopTracker packs folder.
 
----
+Stage select overview maps for Robot Masters, Doc Robot stages, Break Man, and Wily Fortress, plus individual stage maps showing item locations.
 
-## Requirements
-
-- [PopTracker](https://github.com/black-sliver/PopTracker/releases) v0.23.1 or later
-- An [Archipelago](https://archipelago.gg/) server running the Mega Man 3 game
-
----
-
-## Installation
-
-1. Download the latest `.zip` from the [Releases](../../releases) page
-2. Place the zip in your PopTracker `packs` folder:
-   - **Windows:** `%appdata%\PopTracker\packs\`
-   - **Linux/Mac:** `~/.config/PopTracker/packs/`
-3. Launch PopTracker and select **Mega Man 3 Archipelago** from the pack list
-4. Click the **AP** button and enter your server details to enable autotracking
+When using Archipelago auto tracking, settings and logic will be set automatically. For manual operation click the **Open Pack Settings** button at the top of PopTracker.
 
 ---
 
 ## Features
 
-- **Full autotracking** — items and locations sync automatically via Archipelago
-- **22 map screens** — individual stage maps for all Robot Master stages, Doc Robot stages, and all 6 Wily Fortress stages, plus stage select overviews
-- **115 check locations** tracked across all stages
-- **Two YAML modes** supported via in-tracker settings toggles:
-  - Default (bosses + weapons only)
-  - Consumables enabled (E-Tanks, 1-Ups, Health Energy, Weapon Energy)
-- **Settings Pop Out** — toggle E-Tanks/1-Ups and Energy Pickups on/off to match your YAML without leaving the tracker
+- Stage select overview maps with accessibility indicators
+  - Robot Masters (8 stages)
+  - Doc Robot stages (4 stages)
+  - Break Man
+  - Wily Fortress (6 stages)
+- Individual stage maps with check locations for all stages
+- Auto-tracking via Archipelago client
+- Boss portrait items with X overlay when defeated
+- Doc Robot stage portraits with locked/unlocked/defeated states
+- Sequential Wily stage unlocking (each stage opens after its boss is defeated)
+- Settings toggles for E-Tank/1-Up checks and Weapon/Health Energy checks
 
 ---
 
-## YAML Modes
+## Settings
 
-### Default
-Only boss defeats and weapon/Rush item pickups are checks. The energy and E-Tank location dots are hidden.
+Settings are accessed via the **Open Pack Settings** button (gear icon) at the top of PopTracker.
 
-### Consumables Enabled
-Activates additional check locations for:
-- **E-Tanks** (up to 2 per Robot Master stage, up to 2 per Wily stage)
-- **1-Ups** (Top Man, Doc Robot Needle, and select Wily stages)
-- **Health Energy (L)** pickups per stage
-- **Weapon Energy (L)** pickups per stage
+| Setting | Description |
+|---------|-------------|
+| **E-Tanks & 1-Ups In Pool** | Show E-Tank and 1-Up pickup checks on stage maps. Disable if your seed does not have these shuffled. |
+| **Weapon & Health Energy In Pool** | Show Weapon Energy and Health Energy pickup checks on stage maps. Disable if your seed does not have these shuffled. |
 
-Toggle these on in the **Settings Pop Out** (gear icon) to match your YAML:
-
-| Icon | Setting | What it shows |
-|------|---------|---------------|
-| ![E-Tanks On](images/items/etanks_on.png) | E-Tanks & 1-Ups | E-Tank and 1-Up check locations |
-| ![Energy On](images/items/energy_on.png) | Energy Pickups | Health and Weapon energy check locations |
+Both settings are **enabled by default**. If your YAML does not include consumables or energy pickups in the item pool, toggle them off to hide those checks.
 
 ---
 
-## Tracker Layout
-### Items Panel (left)
-| Row | Contents |
-|-----|----------|
-| 1–3 | Robot Master portraits — grey (locked) → colour (stage accessible) → X (boss defeated) |
-| 4–6 | 8 Robot Master weapons |
-| 7 | Rush Coil, Rush Jet, Rush Marine |
-| 8 | E-Tank counter · Break Man toggle |
-| 9–10 | Doc Robot stage access toggles |
+## Logic Notes
 
-### Map Tabs (right)
-| Tab | Contents |
-|-----|----------|
-| Stage Select | Main 8 Robot Master stage select screen |
-| Doc Stage Select | Doc Robot stage select screen |
-| Break Man | Break Man stage select screen |
-| Robot Masters | Individual maps for all 8 Robot Master stages |
-| Doc Robot | Individual maps for all 4 Doc Robot stages |
-| Dr. Wily | Overview map + individual maps for Wily 1–6 |
+- **Robot Master stages** unlock when the corresponding access code item is received
+- **Doc Robot stages** unlock when the corresponding Robot Master is defeated OR when the Doc stage access code item is received (handles both shuffled and unshuffled seeds)
+- **Break Man** requires all 8 Robot Masters defeated AND all 4 Doc Robot stages completed
+- **Wily Stage 1** unlocks when Break Man is defeated
+- **Wily Stages 2–6** unlock sequentially as each Wily boss is defeated
+- **Wily Stage 4** (Robot Master refights) unlocks alongside Wily Stage 5 since it has no boss check of its own
 
 ---
 
-## Stage Logic
+## Auto-Tracking Notes
 
-- **Robot Master stages** unlock individually when the corresponding stage access item is received
-- **Doc Robot stages** unlock when the corresponding Doc Robot stage access item is received
-- **Break Man** unlocks after all 8 Robot Masters are defeated
-- **Wily 1** unlocks after defeating Break Man
-- **Wily 2–6** each unlock sequentially after clearing the previous Wily stage
+- Connect via the AP button at the top of PopTracker
+- Item states (boss portraits, doc stage icons, weapons, consumables) restore correctly after reset and reconnect
+- The stage select and individual stage maps reflect check completion state independently
 
 ---
 
 ## Credits
 
-- Pack created for use with the [Mega Man 3 Archipelago](https://archipelago.gg/) world
-- Built with [PopTracker](https://github.com/black-sliver/PopTracker)
-- Sprites and stage map images from Mega Man 3 (NES, Capcom 1990)
+Created by [l337f00l](https://github.com/l337f00l)
+
+Based on the [Mega Man 2 AP PopTracker pack](https://github.com/BrianCumminger/megaman2-ap-poptracker) by MeridianBC / BrianCumminger
+
+Mega Man 3 APWorld by [Silvris](https://github.com/Silvris)
+
+Stage maps generated from Mega Man 3 (NES)
