@@ -1,189 +1,517 @@
-ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
-ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+
+require("scripts/autotracking/item_mapping")
+require("scripts/autotracking/location_mapping")
+
+-- Helper: FindObjectForCode('@Location/Section') returns a LocationSection directly
+-- when using flat section structure. This helper is kept for safety but is now simple.
+-- Helper: FindObjectForCode('@Location/Section') may return a Location or LocationSection.
+-- When it returns a Location (has .Sections), we get the first section.
+local function getLocationSection(obj)
+    if obj == nil then return nil end
+    -- If obj already has AvailableChestCount, it IS a LocationSection - use directly
+    local ok, val = pcall(function() return obj.AvailableChestCount end)
+    if ok and val ~= nil then
+        return obj
+    end
+    -- Otherwise it's a Location - get its first Section
+    local ok2, secs = pcall(function() return obj.Sections end)
+    if ok2 and secs ~= nil and secs[1] ~= nil then
+        return secs[1]
+    end
+    return obj
+end
+
 
 CUR_INDEX = -1
-SLOT_DATA = nil
-LOCAL_ITEMS = {}
-GLOBAL_ITEMS = {}
+--SLOT_DATA = nil
 
--- Helper: decrement a section's chest count (marks it as checked)
-function check_section(section_path)
-    local obj = Tracker:FindObjectForCode(section_path)
-    if obj then
-        if obj.AvailableChestCount and obj.AvailableChestCount > 0 then
-            obj.AvailableChestCount = obj.AvailableChestCount - 1
+ALL_LOCATIONS = {}
+SLOT_DATA = {}
+
+MANUAL_CHECKED = true
+ROOM_SEED = "default"
+TROLL_PLAYER = false
+
+if Highlight then
+    HIGHLIGHT_LEVEL= {
+        [0] = Highlight.Unspecified,
+        [10] = Highlight.NoPriority,
+        [20] = Highlight.Avoid,
+        [30] = Highlight.Priority,
+        [40] = Highlight.None,
+        [100] = Highlight.Unspecified, --Filler
+        [101] = Highlight.Priority, --Progression
+        [102] = Highlight.NoPriority, --Useful
+        [103] = Highlight.Priority, -- Prog + Useful
+        [104] = Highlight.Avoid, --Trap
+        [105] = Highlight.Priority, -- Prog + Trap
+        [106] = Highlight.NoPriority, -- Useful + Trap
+        [107] = Highlight.Priority, -- Prog + Useful + Trap
+    }
+end
+
+Troll_Lookup = {
+    ["solarcell"] = true,
+    ["earthor"] = true,
+}
+
+function dump_table(o, depth)
+    if depth == nil then
+        depth = 0
+    end
+    if type(o) == 'table' then
+        local tabs = ('\t'):rep(depth)
+        local tabs2 = ('\t'):rep(depth + 1)
+        local s = '{\n'
+        for k, v in pairs(o) do
+            if type(k) ~= 'number' then
+                k = '"' .. k .. '"'
+            end
+            s = s .. tabs2 .. '[' .. k .. '] = ' .. dump_table(v, depth + 1) .. ',\n'
         end
+        return s .. tabs .. '}'
     else
-        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print("[MM3 AP] Could not find section: " .. tostring(section_path))
+        return tostring(o)
+    end
+end
+
+function LocationHandler(location)
+    if MANUAL_CHECKED then
+        local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage").ItemState
+        if not custom_storage_item then
+            return
+        end
+        if Archipelago.PlayerNumber == -1 then -- not connected
+            if ROOM_SEED ~= "default" then -- seed is from previous connection
+                ROOM_SEED = "default"
+                custom_storage_item.MANUAL_LOCATIONS["default"] = {}
+            else -- seed is default
+            end
+        end
+        local full_path = location.FullID
+        if not custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED] then
+            custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED] = {}
+        end
+        if location.AvailableChestCount < location.ChestCount then --add to list
+            -- print("add to list")
+            custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED][full_path] = location.AvailableChestCount
+        else --remove from list of set back to max chestcount
+            -- print("remove from list")
+            custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED][full_path] = nil
         end
     end
+    -- local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage").ItemState
+    -- print(dump_table(storage_item.ItemState.MANUAL_LOCATIONS))
+    ForceUpdate() -- 
 end
 
--- Set a boss stage to "open" (stage 1 = colored portrait)
-function set_stage_state_unlocked(statecode)
-    local state = Tracker:FindObjectForCode(statecode)
-    if state and state.CurrentStage == 0 then
-        state.CurrentStage = 1
+function ForceUpdate()
+    local update = Tracker:FindObjectForCode("update")
+    if update == nil then
+        return
+    end
+    update.Active = not update.Active
+end
+
+function onClearHandler(slot_data)
+    local clear_timer = os.clock()
+    
+    ScriptHost:RemoveWatchForCode("StateChange")
+    -- Disable tracker updates.
+    Tracker.BulkUpdate = true
+    -- Use a protected call so that tracker updates always get enabled again, even if an error occurred.
+    local ok, err = pcall(onClear, slot_data)
+    -- Enable tracker updates again.
+    if ok then
+        -- Defer re-enabling tracker updates until the next frame, which doesn't happen until all received items/cleared
+        -- locations from AP have been processed.
+        local handlerName = "AP onClearHandler"
+        local function frameCallback()
+            ScriptHost:AddWatchForCode("StateChange", "*", StateChanged)
+            ScriptHost:RemoveOnFrameHandler(handlerName)
+            Tracker.BulkUpdate = false
+            ForceUpdate()
+            print(string.format("Time taken total: %.2f", os.clock() - clear_timer))
+            -- Sync immediately after replay (handles normal reconnect)
+            syncStatesFromLocations()
+            -- Also register a repeating sync for the next ~5 seconds to handle
+            -- PopTracker's 'reset' RAM state load that can overwrite item stages.
+            -- This runs every 30 frames until the repeat count expires.
+            local _sync_repeats = 0
+            local _sync_max = 10  -- run 10 times = ~5 seconds at 60fps
+            ScriptHost:RemoveOnFrameHandler("post_reset_sync")
+            local _sync_frame_count = 0
+            ScriptHost:AddOnFrameHandler("post_reset_sync", function()
+                _sync_frame_count = _sync_frame_count + 1
+                if _sync_frame_count < 30 then return end  -- every ~0.5s
+                _sync_frame_count = 0
+                _sync_repeats = _sync_repeats + 1
+                syncStatesFromLocations()
+                if _sync_repeats >= _sync_max then
+                    ScriptHost:RemoveOnFrameHandler("post_reset_sync")
+                end
+            end)
+
+        end
+        ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
+    else
+        Tracker.BulkUpdate = false
+        print("Error: onClear failed:")
+        print(err)
     end
 end
 
--- Set a boss stage to "defeated" (stage 2 = X over portrait)
-function set_stage_state_cleared(statecode)
-    local state = Tracker:FindObjectForCode(statecode)
-    if state then
-        state.CurrentStage = 2
+function preOnClear()
+    PLAYER_ID = Archipelago.PlayerNumber or -1
+	TEAM_NUMBER = Archipelago.TeamNumber or 0
+    if Archipelago.PlayerNumber > -1 then
+        for key, _ in pairs(Troll_Lookup) do
+            if string.find(string.lower(Archipelago:GetPlayerAlias(PLAYER_ID)), key, 1, true) ~= nil then
+                TROLL_PLAYER = true
+                break
+            end
+        end
+        if #ALL_LOCATIONS > 0 then
+            ALL_LOCATIONS = {}
+        end
+        for _, value in pairs(Archipelago.MissingLocations) do
+            table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
+        end
+
+        for _, value in pairs(Archipelago.CheckedLocations) do
+            table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
+        end
+        HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({HINTS_ID})
+        Archipelago:Get({HINTS_ID})
+    end
+
+
+    -- print(Archipelago.Seed)
+    local seed_base = (Archipelago.Seed or tostring(#ALL_LOCATIONS)).."_"..Archipelago.TeamNumber.."_"..Archipelago.PlayerNumber
+    if ROOM_SEED == "default" or ROOM_SEED ~= seed_base then -- seed is default or from previous connection
+
+        ROOM_SEED = seed_base --something like 2345_0_12
+        for _, custom_item_code in pairs({"manual_location_storage"}) do -- add more to the table if you created more storage cache items
+            local custom_storage_item = Tracker:FindObjectForCode(custom_item_code).ItemState
+            if custom_storage_item then
+                if #custom_storage_item.MANUAL_LOCATIONS > 10 then
+                    custom_storage_item.MANUAL_LOCATIONS[custom_storage_item.MANUAL_LOCATIONS_ORDER[1]] = nil
+                    table.remove(custom_storage_item.MANUAL_LOCATIONS_ORDER, 1)
+                end
+                if custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED] == nil then
+                    custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED] = {}
+                    table.insert(custom_storage_item.MANUAL_LOCATIONS_ORDER, ROOM_SEED)
+                end
+            end
+        end
+    else -- seed is from previous connection
+        -- do nothing
     end
 end
 
 function onClear(slot_data)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print("onClear called")
+    -- Cancel any pending post-reset sync from previous onClear cycle
+    ScriptHost:RemoveOnFrameHandler("post_reset_sync")
+    MANUAL_CHECKED = false
+    local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage").ItemState
+    if custom_storage_item == nil then
+        CreateLuaManualStorageItem("manual_location_storage")
+        custom_storage_item = Tracker:FindObjectForCode("manual_location_storage").ItemState
     end
-    SLOT_DATA = slot_data
+    -- repeat that here for every cache-storage item you create just to be save
+    
+    preOnClear()
+    
+    ScriptHost:RemoveWatchForCode("StateChanged")
+    ScriptHost:RemoveOnLocationSectionHandler("location_section_change_handler")
+    --SLOT_DATA = slot_data
     CUR_INDEX = -1
-    LOCAL_ITEMS = {}
-    GLOBAL_ITEMS = {}
-
-    -- Reset all items
-    for _, v in pairs(ITEM_MAPPING_BY_NAME) do
-        local obj = Tracker:FindObjectForCode(v[1])
-        if obj then
-            if v[2] == "toggle" then
-                obj.Active = false
-            elseif v[2] == "progressive" then
-                obj.CurrentStage = 0
-            elseif v[2] == "consumable" then
-                obj.AcquiredCount = 0
+    -- reset locations
+    for _, location_array in pairs(LOCATION_MAPPING) do
+        for _, location in pairs(location_array) do
+            if location then
+                local location_obj = Tracker:FindObjectForCode(location)
+                if location_obj then
+                    if location:sub(1, 1) == "@" then
+                        local section_obj = getLocationSection(location_obj)
+                        if section_obj then
+                            if custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED][location_obj.FullID] then
+                                section_obj.AvailableChestCount = custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED][location_obj.FullID]
+                            else
+                                section_obj.AvailableChestCount = section_obj.ChestCount
+                            end
+                        end
+                    else
+                        location_obj.Active = false
+                    end
+                end
             end
         end
     end
-
-    -- Reset all location sections (restore chest counts to full)
-    for _, section_path in pairs(LOCATION_NAME_TO_SECTION) do
-        local obj = Tracker:FindObjectForCode(section_path)
-        if obj and obj.ChestCount then
-            obj.AvailableChestCount = obj.ChestCount
+    -- reset items
+    for _, item_array in pairs(ITEM_MAPPING) do
+        for _, item_pair in pairs(item_array) do
+            item_code = item_pair[1]
+            item_type = item_pair[2]
+            -- print("on clear", item_code, item_type)
+            local item_obj = Tracker:FindObjectForCode(item_code)
+            if item_obj then
+                if item_obj.Type == "toggle" then
+                    item_obj.Active = false
+                elseif item_obj.Type == "progressive" then
+                    item_obj.CurrentStage = 0
+                elseif item_obj.Type == "consumable" then
+                    if item_obj.MinCount then
+                        item_obj.AcquiredCount = item_obj.MinCount
+                    else
+                        item_obj.AcquiredCount = 0
+                    end
+                elseif item_obj.Type == "progressive_toggle" then
+                    item_obj.CurrentStage = 0
+                    item_obj.Active = false
+                end
+            end
         end
     end
+    PLAYER_ID = Archipelago.PlayerNumber or -1
+    TEAM_NUMBER = Archipelago.TeamNumber or 0
+    SLOT_DATA = slot_data
+    -- if Tracker:FindObjectForCode("autofill_settings").Active == true then
+    --     autoFill(slot_data)
+    -- end
+    -- print(PLAYER_ID, TEAM_NUMBER)
+    if Archipelago.PlayerNumber > -1 then
+        if #ALL_LOCATIONS > 0 then
+            ALL_LOCATIONS = {}
+        end
+        for _, value in pairs(Archipelago.MissingLocations) do
+            table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
+        end
 
-    print("[MM3 AP] Cleared - ready for resync")
+        for _, value in pairs(Archipelago.CheckedLocations) do
+            table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
+        end
+
+        HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
+        Archipelago:SetNotify({HINTS_ID})
+        Archipelago:Get({HINTS_ID})
+    end
+    ScriptHost:AddOnFrameHandler("load handler", OnFrameHandler)
+    MANUAL_CHECKED = true
 end
 
 function onItem(index, item_id, item_name, player_number)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onItem: index=%s name=%s", index, item_name))
+    if index <= CUR_INDEX then
+        return
     end
-    if not AUTOTRACKER_ENABLE_ITEM_TRACKING then return end
-    if index <= CUR_INDEX then return end
-    CUR_INDEX = index
-
-    local v = ITEM_MAPPING_BY_NAME[item_name]
-    if not v then
-        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("[MM3 AP] Unknown item: %s", item_name))
+    local is_local = player_number == Archipelago.PlayerNumber
+    CUR_INDEX = index;
+    local item = ITEM_MAPPING[item_id]
+    if not item or not item[1] then
+        --print(string.format("onItem: could not find item mapping for id %s", item_id))
+        return
+    end
+    for _, item_pair in pairs(item) do
+        item_code = item_pair[1]
+        item_type = item_pair[2]
+        local item_obj = Tracker:FindObjectForCode(item_code)
+        if item_obj then
+            if item_obj.Type == "toggle" then
+                -- print("toggle")
+                item_obj.Active = true
+            elseif item_obj.Type == "progressive" then
+                -- print("progressive")
+                if item_obj.Active == true then
+                    -- Cap boss/doc stage access code advancement at stage 1.
+                    -- Stage 2 (defeated) is set only by watches.lua on boss defeat.
+                    local is_access_code = string.find(item_code, "_man_state") or
+                                           string.find(item_code, "stage_doc")
+                    if is_access_code and item_obj.CurrentStage >= 1 then
+                        -- Already at open/unlocked stage, don't over-advance
+                    else
+                        item_obj.CurrentStage = item_obj.CurrentStage + 1
+                    end
+                else
+                    item_obj.Active = true
+                    -- Also advance stage since item was received
+                    local is_access_code2 = string.find(item_code, "_man_state") or
+                                            string.find(item_code, "stage_doc")
+                    if not (is_access_code2 and item_obj.CurrentStage >= 1) then
+                        item_obj.CurrentStage = item_obj.CurrentStage + 1
+                    end
+                end
+            elseif item_obj.Type == "consumable" then
+                item_obj.AcquiredCount = item_obj.AcquiredCount + (tonumber(item_pair[3]) or 1)
+            elseif item_obj.Type == "progressive_toggle" then
+                -- print("progressive_toggle")
+                if item_obj.Active then
+                    item_obj.CurrentStage = item_obj.CurrentStage + 1
+                else
+                    item_obj.Active = true
+                    -- Also advance stage since item was received
+                    local is_access_code2 = string.find(item_code, "_man_state") or
+                                            string.find(item_code, "stage_doc")
+                    if not (is_access_code2 and item_obj.CurrentStage >= 1) then
+                        item_obj.CurrentStage = item_obj.CurrentStage + 1
+                    end
+                end
+            end
+        else
+            print(string.format("onItem: could not find object for code %s", item_code[1]))
         end
+    end
+end
+
+--called when a location gets cleared
+function onLocation(location_id, location_name)
+    MANUAL_CHECKED = false
+    local location_array = LOCATION_MAPPING[location_id]
+    if not location_array or not location_array[1] then
+        print(string.format("onLocation: could not find location mapping for id %s", location_id))
         return
     end
 
-    local obj = Tracker:FindObjectForCode(v[1])
-    if obj then
-        if v[2] == "toggle" then
-            obj.Active = true
-        elseif v[2] == "progressive" then
-            if obj.CurrentStage == 0 then
-                obj.CurrentStage = 1
+    for _, location in pairs(location_array) do
+        local location_obj = Tracker:FindObjectForCode(location)
+        if location_obj then
+            if location:sub(1, 1) == "@" then
+                local section_obj = getLocationSection(location_obj)
+                if section_obj then
+                    section_obj.AvailableChestCount = section_obj.AvailableChestCount - 1
+                end
+            else
+                location_obj.Active = true
             end
-        elseif v[2] == "consumable" then
-            obj.AcquiredCount = obj.AcquiredCount + 1
+        else
+            print(string.format("onLocation: could not find location_object for code %s", location))
+        end
+    end
+    MANUAL_CHECKED = true
+end
+
+-- this Autofill function is meant as an example on how to do the reading from slotdata and mapping the values to 
+-- your own settings
+-- function autoFill()
+--     if SLOT_DATA == nil  then
+--         print("its fucked")
+--         return
+--     end
+--     -- print(dump_table(SLOT_DATA))
+
+--     mapToggle={[0]=0,[1]=1,[2]=1,[3]=1,[4]=1}
+--     mapToggleReverse={[0]=1,[1]=0,[2]=0,[3]=0,[4]=0}
+--     mapTripleReverse={[0]=2,[1]=1,[2]=0}
+
+--     slotCodes = {
+--         map_name = {code="", mapping=mapToggle...}
+--     }
+--     -- print(dump_table(SLOT_DATA))
+--     -- print(Tracker:FindObjectForCode("autofill_settings").Active)
+--     if Tracker:FindObjectForCode("autofill_settings").Active == true then
+--         for settings_name , settings_value in pairs(SLOT_DATA) do
+--             -- print(k, v)
+--             if slotCodes[settings_name] then
+--                 item = Tracker:FindObjectForCode(slotCodes[settings_name].code)
+--                 if item.Type == "toggle" then
+--                     item.Active = slotCodes[settings_name].mapping[settings_value]
+--                 else 
+--                     -- print(k,v,Tracker:FindObjectForCode(slotCodes[k].code).CurrentStage, slotCodes[k].mapping[v])
+--                     item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
+--                 end
+--             end
+--         end
+--     end
+-- end
+
+function OnNotify(key, value, old_value)
+    if value ~= old_value and key == HINTS_ID then
+        Tracker.BulkUpdate = true
+        for _, hint in ipairs(value) do
+            if hint.finding_player == Archipelago.PlayerNumber then
+                if hint.status == 0 then
+                    UpdateHints(hint.location, 100+hint.item_flags)
+                else
+                    UpdateHints(hint.location, hint.status)
+                end
+            end
+        end
+        Tracker.BulkUpdate = false
+    end
+end
+
+function OnNotifyLaunch(key, value)
+    if key == HINTS_ID then
+        Tracker.BulkUpdate = true
+        for _, hint in ipairs(value) do
+            if hint.finding_player == Archipelago.PlayerNumber then
+                if hint.status == 0 then
+                    UpdateHints(hint.location, 100+hint.item_flags)
+                else
+                    UpdateHints(hint.location, hint.status)
+                end
+            end
+        end
+        Tracker.BulkUpdate = false
+    end
+end
+
+
+function UpdateHints(locationID, status)
+    if Highlight then
+        local location_table = LOCATION_MAPPING[locationID]
+        if not location_table then return end
+        for _, location in ipairs(location_table) do
+            if location:sub(1, 1) == "@" then
+                local obj = Tracker:FindObjectForCode(location)
+                local sec = getLocationSection(obj)
+                if sec then
+                    -- Don't color already-collected sections
+                    if sec.AvailableChestCount ~= nil and sec.AvailableChestCount == 0 then
+                        sec.Highlight = Highlight.None
+                    -- Don't color boss defeat or weapon received locations
+                    elseif location:find("/Defeated") or location:find("/Received") then
+                        -- leave as-is, colored by access_rules
+                    elseif TROLL_PLAYER and HIGHLIGHT_LEVEL[status] == Highlight.Avoid then
+                        sec.Highlight = HIGHLIGHT_LEVEL[30]
+                    else
+                        sec.Highlight = HIGHLIGHT_LEVEL[status]
+                    end
+                end
+            end
         end
     end
 end
 
-function onLocation(location_id, location_name)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onLocation: id=%s name=%s", location_id, location_name))
-    end
-    if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then return end
 
-    -- ---------------------------------------------------------------
-    -- Boss portrait state updates (locked -> open -> defeated)
-    -- ---------------------------------------------------------------
-    local boss_defeats = {
-        ["Needle Man Boss"]  = "needle_man_state",
-        ["Magnet Man Boss"]  = "magnet_man_state",
-        ["Gemini Man Boss"]  = "gemini_man_state",
-        ["Hard Man Boss"]    = "hard_man_state",
-        ["Top Man Boss"]     = "top_man_state",
-        ["Snake Man Boss"]   = "snake_man_state",
-        ["Spark Man Boss"]   = "spark_man_state",
-        ["Shadow Man Boss"]  = "shadow_man_state",
-    }
-    if boss_defeats[location_name] then
-        set_stage_state_cleared(boss_defeats[location_name])
-    end
+-- Clear highlights on collected sections whenever any item/location state changes.
+-- Uses WatchForCode("*") which fires synchronously on every tracked code change.
+-- This reliably overrides the AP C++ highlight coloring after our lua runs.
 
-    -- Break Man -> unlock Wily Fortress
-    if location_name == "Break Man" then
-        local bm = Tracker:FindObjectForCode("break_man_state")
-        if bm then bm.CurrentStage = 1 end
-        local wf = Tracker:FindObjectForCode("wily_fortress_state")
-        if wf and wf.CurrentStage == 0 then wf.CurrentStage = 1 end
-    end
 
-    -- Wily stage boss clears
-    local wily_clears = {
-        ["Wily 1 Boss"] = "wily_1_cleared",
-        ["Wily 2 Boss"] = "wily_2_cleared",
-        ["Wily 3 Boss"] = "wily_3_cleared",
-        ["Wily 4 Boss"] = "wily_4_cleared",
-        ["Wily 5 Boss"] = "wily_5_cleared",
-    }
-    if wily_clears[location_name] then
-        local item = Tracker:FindObjectForCode(wily_clears[location_name])
-        if item then item.Active = true end
-    end
 
-    -- Doc Robot stage progression (each boss defeat advances stage 0->1->2)
-    local doc_stage_bosses = {
-        ["Doc Robot Needle Man - Air Man Boss"]   = "stage_doc_needle",
-        ["Doc Robot Needle Man - Crash Man Boss"] = "stage_doc_needle",
-        ["Doc Robot Gemini Man - Bubble Man Boss"] = "stage_doc_gemini",
-        ["Doc Robot Gemini Man - Flash Man Boss"]  = "stage_doc_gemini",
-        ["Doc Robot Spark Man - Metal Man Boss"]   = "stage_doc_spark",
-        ["Doc Robot Spark Man - Quick Man Boss"]   = "stage_doc_spark",
-        ["Doc Robot Shadow Man - Heat Man Boss"]   = "stage_doc_shadow",
-        ["Doc Robot Shadow Man - Wood Man Boss"]   = "stage_doc_shadow",
-    }
-    if doc_stage_bosses[location_name] then
-        local item = Tracker:FindObjectForCode(doc_stage_bosses[location_name])
-        if item and item.CurrentStage < 2 then
-            item.CurrentStage = item.CurrentStage + 1
-        end
-    end
+-- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)
+Archipelago:AddClearHandler("clear handler", onClearHandler)
+Archipelago:AddItemHandler("item handler", onItem)
+Archipelago:AddLocationHandler("location handler", onLocation)
 
-    -- ---------------------------------------------------------------
-    -- Section check: mark the map location section as collected
-    -- ---------------------------------------------------------------
-    local section_path = LOCATION_NAME_TO_SECTION[location_name]
-    if section_path then
-        check_section(section_path)
-        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("[MM3 AP] Checked: %s -> %s", location_name, section_path))
-        end
-    else
-        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("[MM3 AP] No section mapping for location: %s", location_name))
-        end
-    end
-end
+Archipelago:AddSetReplyHandler("notify handler", OnNotify)
+Archipelago:AddRetrievedHandler("notify launch handler", OnNotifyLaunch)
 
-Archipelago:AddClearHandler("clear handler", onClear)
-if AUTOTRACKER_ENABLE_ITEM_TRACKING then
-    Archipelago:AddItemHandler("item handler", onItem)
-end
-if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
-    Archipelago:AddLocationHandler("location handler", onLocation)
-end
 
-print("[MM3 AP] Autotracking registered.")
+
+
+
+--doc
+--hint layout
+-- {
+--     ["receiving_player"] = 1,
+--     ["class"] = Hint,
+--     ["finding_player"] = 1,
+--     ["location"] = 67361,
+--     ["found"] = false,
+--     ["item_flags"] = 2, --bitflag --> 0=filler, 1=progression, 2=useful, 4=trap
+--     ["status"] = 40, --bitflag --> 0=Unspecified, 10=NoPriority, 20=Avoid, 30=Priority, 40=None
+--     ["entrance"] = ,
+--     ["item"] = 66062,
+-- } 

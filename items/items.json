@@ -231,13 +231,13 @@
       {
         "img": "images/items/stage_doc_needle.png",
         "name": "Doc Robot Needle Man Stage - Unlocked",
-        "codes": "stage_doc_needle",
+        "codes": "stage_doc_needle_unlocked",
         "inherit_codes": true
       },
       {
         "img": "images/items/stage_doc_needle_defeated.png",
         "name": "Doc Robot Needle Man Stage - Defeated",
-        "codes": "stage_doc_needle_2",
+        "codes": "stage_doc_needle_defeated",
         "inherit_codes": true
       }
     ]
@@ -258,13 +258,13 @@
       {
         "img": "images/items/stage_doc_gemini.png",
         "name": "Doc Robot Gemini Man Stage - Unlocked",
-        "codes": "stage_doc_gemini",
+        "codes": "stage_doc_gemini_unlocked",
         "inherit_codes": true
       },
       {
         "img": "images/items/stage_doc_gemini_defeated.png",
         "name": "Doc Robot Gemini Man Stage - Defeated",
-        "codes": "stage_doc_gemini_2",
+        "codes": "stage_doc_gemini_defeated",
         "inherit_codes": true
       }
     ]
@@ -285,13 +285,13 @@
       {
         "img": "images/items/stage_doc_spark.png",
         "name": "Doc Robot Spark Man Stage - Unlocked",
-        "codes": "stage_doc_spark",
+        "codes": "stage_doc_spark_unlocked",
         "inherit_codes": true
       },
       {
         "img": "images/items/stage_doc_spark_defeated.png",
         "name": "Doc Robot Spark Man Stage - Defeated",
-        "codes": "stage_doc_spark_2",
+        "codes": "stage_doc_spark_defeated",
         "inherit_codes": true
       }
     ]
@@ -312,13 +312,13 @@
       {
         "img": "images/items/stage_doc_shadow.png",
         "name": "Doc Robot Shadow Man Stage - Unlocked",
-        "codes": "stage_doc_shadow",
+        "codes": "stage_doc_shadow_unlocked",
         "inherit_codes": true
       },
       {
         "img": "images/items/stage_doc_shadow_defeated.png",
         "name": "Doc Robot Shadow Man Stage - Defeated",
-        "codes": "stage_doc_shadow_2",
+        "codes": "stage_doc_shadow_defeated",
         "inherit_codes": true
       }
     ]
@@ -373,11 +373,11 @@
     "codes": "search_snake"
   },
   {
-    "name": "Spark Shot",
+    "name": "Spark Shock",
     "type": "toggle",
     "img": "images/items/spark_shock.png",
     "disabled_img": "images/items/spark_shock_disabled.png",
-    "codes": "spark_shot"
+    "codes": "spark_shock"
   },
   {
     "name": "Shadow Blade",
@@ -414,25 +414,32 @@
     "disabled_img": "images/items/etank_disabled.png",
     "codes": "etank",
     "initial_quantity": 0,
-    "max_quantity": 9
+    "max_quantity": 20,
+    "increment": 1
   },
   {
     "name": "1-Up",
     "type": "consumable",
     "codes": "one_up",
-    "initial_quantity": 0
+    "initial_quantity": 0,
+    "increment": 1,
+    "max_quantity": 20
   },
   {
     "name": "Health Energy",
     "type": "consumable",
     "codes": "health_energy",
-    "initial_quantity": 0
+    "initial_quantity": 0,
+    "increment": 1,
+    "max_quantity": 99
   },
   {
     "name": "Weapon Energy",
     "type": "consumable",
     "codes": "weapon_energy",
-    "initial_quantity": 0
+    "initial_quantity": 0,
+    "increment": 1,
+    "max_quantity": 99
   },
   {
     "name": "Break Man State",
@@ -503,16 +510,68 @@
   },
   {
     "name": "E-Tanks & 1-Ups In Pool",
-    "type": "toggle",
-    "img": "images/items/etanks_on.png",
-    "disabled_img": "images/items/etanks_on_disabled.png",
-    "codes": "etanks_on"
+    "type": "progressive",
+    "codes": "etanks_on",
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/settings/etanks_on_disabled.png",
+        "codes": ""
+      },
+      {
+        "img": "images/settings/etanks_on.png",
+        "codes": "etanks_on"
+      }
+    ]
   },
   {
     "name": "Weapon & Health Energy In Pool",
+    "type": "progressive",
+    "codes": "energy_on",
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/settings/energy_on_disabled.png",
+        "codes": ""
+      },
+      {
+        "img": "images/settings/energy_on.png",
+        "codes": "energy_on"
+      }
+    ]
+  },
+  {
+    "name": "Kamegoro Maker State",
     "type": "toggle",
-    "img": "images/items/energy_on.png",
-    "disabled_img": "images/items/energy_on_disabled.png",
-    "codes": "energy_on"
+    "allow_disabled": true,
+    "codes": "kamegoro_defeated",
+    "img": "images/items/boss_needle_man_disabled.png",
+    "img_mods": "none"
+  },
+  {
+    "name": "Yellow Devil State",
+    "type": "toggle",
+    "allow_disabled": true,
+    "codes": "yellow_devil_defeated",
+    "img": "images/items/boss_needle_man_disabled.png",
+    "img_mods": "none"
+  },
+  {
+    "name": "Holograph State",
+    "type": "toggle",
+    "allow_disabled": true,
+    "codes": "holograph_defeated",
+    "img": "images/items/boss_needle_man_disabled.png",
+    "img_mods": "none"
+  },
+  {
+    "name": "Wily Machine State",
+    "type": "toggle",
+    "allow_disabled": true,
+    "codes": "wily_machine_defeated",
+    "img": "images/items/boss_needle_man_disabled.png",
+    "img_mods": "none"
   }
 ]

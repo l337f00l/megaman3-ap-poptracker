@@ -1,0 +1,5119 @@
+[
+    {
+        "name": "Needle Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "needle_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "stage_select",
+                "x": 229,
+                "y": 65,
+                "size": 12,
+                "shape": "rect"
+            },
+            {
+                "map": "needle_man",
+                "x": 3470,
+                "y": 161,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "needle_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Needle Cannon",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "needle_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "needle_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Needle Man Stage",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "needle_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Needle Man Stage",
+                "access_rules": [
+                    "needle_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Needle Man Stage - Weapon Energy 1",
+        "access_rules": [
+            "needle_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "needle_man",
+                "x": 966,
+                "y": 676,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "needle_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Needle Man Stage - E-Tank",
+        "access_rules": [
+            "needle_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "needle_man",
+                "x": 2783,
+                "y": 549,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank",
+                "access_rules": [
+                    "needle_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "stage_select",
+                "x": 148,
+                "y": 195,
+                "size": 12,
+                "shape": "rect"
+            },
+            {
+                "map": "magnet_man",
+                "x": 2974,
+                "y": 843,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Missile",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Magnet Man Stage",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage - Health Energy 1",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "magnet_man",
+                "x": 1727,
+                "y": 1271,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage - Health Energy 2",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "magnet_man",
+                "x": 1696,
+                "y": 1271,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage - Health Energy 3",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "magnet_man",
+                "x": 1662,
+                "y": 1271,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 3",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage - Health Energy 4",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "magnet_man",
+                "x": 1631,
+                "y": 1271,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 4",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage - Weapon Energy 1",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "magnet_man",
+                "x": 2438,
+                "y": 1319,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage - Weapon Energy 2",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "magnet_man",
+                "x": 2454,
+                "y": 1319,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage - Weapon Energy 3",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "magnet_man",
+                "x": 2392,
+                "y": 1397,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Magnet Man Stage - Health Energy 5",
+        "access_rules": [
+            "magnet_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "magnet_man",
+                "x": 2361,
+                "y": 1397,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 5",
+                "access_rules": [
+                    "magnet_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "stage_select",
+                "x": 68,
+                "y": 195,
+                "size": 12,
+                "shape": "rect"
+            },
+            {
+                "map": "gemini_man",
+                "x": 5793,
+                "y": 148,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Laser",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Gemini Man Stage",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - 1-Up 1",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 2392,
+                "y": 562,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up 1",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - Health Energy 1",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 2501,
+                "y": 596,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - Mystery Tank",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 2720,
+                "y": 579,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - Weapon Energy 1",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 2880,
+                "y": 100,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - Health Energy 2",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 3920,
+                "y": 340,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - 1-Up 2",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 4351,
+                "y": 725,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up 2",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - E-Tank 1",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 4607,
+                "y": 724,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank 1",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - Weapon Energy 2",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 4632,
+                "y": 643,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - Weapon Energy 3",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 5095,
+                "y": 644,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Gemini Man Stage - E-Tank 2",
+        "access_rules": [
+            "gemini_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "gemini_man",
+                "x": 5366,
+                "y": 563,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank 2",
+                "access_rules": [
+                    "gemini_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "stage_select",
+                "x": 69,
+                "y": 131,
+                "size": 12,
+                "shape": "rect"
+            },
+            {
+                "map": "hard_man",
+                "x": 3475,
+                "y": 847,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Knuckle",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man Stage",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Hard Man Stage",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man Stage - Health Energy 1",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "hard_man",
+                "x": 1344,
+                "y": 1779,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man Stage - Health Energy 2",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "hard_man",
+                "x": 1852,
+                "y": 1124,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man Stage - E-Tank",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "hard_man",
+                "x": 2711,
+                "y": 580,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man Stage - Health Energy 3",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "hard_man",
+                "x": 2681,
+                "y": 309,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 3",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man Stage - Health Energy 4",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "hard_man",
+                "x": 2666,
+                "y": 309,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 4",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man Stage - Health Energy 5",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "hard_man",
+                "x": 2647,
+                "y": 309,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 5",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Hard Man Stage - Health Energy 6",
+        "access_rules": [
+            "hard_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "hard_man",
+                "x": 3045,
+                "y": 677,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 6",
+                "access_rules": [
+                    "hard_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "stage_select",
+                "x": 228,
+                "y": 131,
+                "size": 12,
+                "shape": "rect"
+            },
+            {
+                "map": "top_man",
+                "x": 3217,
+                "y": 1326,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Spin",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Top Man Stage",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage - Health Energy 1",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "top_man",
+                "x": 969,
+                "y": 85,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage - Health Energy 2",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "top_man",
+                "x": 934,
+                "y": 582,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage - Health Energy 3",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "top_man",
+                "x": 950,
+                "y": 582,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 3",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage - Health Energy 4",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "top_man",
+                "x": 971,
+                "y": 582,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 4",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage - Weapon Energy 1",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "top_man",
+                "x": 936,
+                "y": 644,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage - 1-Up",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "top_man",
+                "x": 1401,
+                "y": 1063,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage - Health Energy 5",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "top_man",
+                "x": 1446,
+                "y": 1063,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 5",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Top Man Stage - Health Energy 6",
+        "access_rules": [
+            "top_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "top_man",
+                "x": 2008,
+                "y": 1526,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 6",
+                "access_rules": [
+                    "top_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Snake Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "snake_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "stage_select",
+                "x": 147,
+                "y": 67,
+                "size": 12,
+                "shape": "rect"
+            },
+            {
+                "map": "snake_man",
+                "x": 4240,
+                "y": 123,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "snake_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Search Snake",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "snake_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "snake_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Snake Man Stage",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "snake_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Snake Man Stage",
+                "access_rules": [
+                    "snake_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Snake Man Stage - Health Energy 1",
+        "access_rules": [
+            "snake_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "snake_man",
+                "x": 1369,
+                "y": 1270,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "snake_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Snake Man Stage - Health Energy 2",
+        "access_rules": [
+            "snake_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "snake_man",
+                "x": 1432,
+                "y": 1270,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "snake_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Snake Man Stage - Mystery Tank 1",
+        "access_rules": [
+            "snake_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "snake_man",
+                "x": 1993,
+                "y": 920,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 1",
+                "access_rules": [
+                    "snake_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Snake Man Stage - Mystery Tank 2",
+        "access_rules": [
+            "snake_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "snake_man",
+                "x": 1959,
+                "y": 920,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 2",
+                "access_rules": [
+                    "snake_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Snake Man Stage - Health Energy 3",
+        "access_rules": [
+            "snake_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "snake_man",
+                "x": 2616,
+                "y": 532,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 3",
+                "access_rules": [
+                    "snake_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "stage_select",
+                "x": 69,
+                "y": 68,
+                "size": 12,
+                "shape": "rect"
+            },
+            {
+                "map": "spark_man",
+                "x": 3471,
+                "y": 1307,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Shock",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Man Stage",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Spark Man Stage",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Man Stage - Health Energy 1",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "spark_man",
+                "x": 1403,
+                "y": 341,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Man Stage - Weapon Energy 1",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "spark_man",
+                "x": 1448,
+                "y": 342,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Man Stage - Weapon Energy 2",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "spark_man",
+                "x": 2262,
+                "y": 1398,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Man Stage - Weapon Energy 3",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "spark_man",
+                "x": 2278,
+                "y": 1398,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Man Stage - Weapon Energy 4",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "spark_man",
+                "x": 2292,
+                "y": 1398,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 4",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Spark Man Stage - Weapon Energy 5",
+        "access_rules": [
+            "spark_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "spark_man",
+                "x": 2310,
+                "y": 1398,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 5",
+                "access_rules": [
+                    "spark_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "stage_select",
+                "x": 229,
+                "y": 193,
+                "size": 12,
+                "shape": "rect"
+            },
+            {
+                "map": "shadow_man",
+                "x": 4238,
+                "y": 1573,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Blade",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Man Stage",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Shadow Man Stage",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Man Stage - Weapon Energy 1",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "shadow_man",
+                "x": 1985,
+                "y": 1541,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Man Stage - Weapon Energy 2",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "shadow_man",
+                "x": 1953,
+                "y": 1541,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Man Stage - Weapon Energy 3",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "shadow_man",
+                "x": 1921,
+                "y": 1541,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Shadow Man Stage - Weapon Energy 4",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "shadow_man",
+                "x": 1889,
+                "y": 1541,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 4",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Rush Jet",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Rush Marine",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "shadow_man_1"
+        ],
+        "map_locations": [],
+        "sections": [
+            {
+                "name": "Received",
+                "access_rules": [
+                    "shadow_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Break Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "needle_man_2,magnet_man_2,gemini_man_2,hard_man_2,top_man_2,snake_man_2,spark_man_2,shadow_man_2,stage_doc_needle_defeated,stage_doc_gemini_defeated,stage_doc_spark_defeated,stage_doc_shadow_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "break_man_select",
+                "x": 283,
+                "y": 247,
+                "size": 18,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "needle_man_2,magnet_man_2,gemini_man_2,hard_man_2,top_man_2,snake_man_2,spark_man_2,shadow_man_2,stage_doc_needle_defeated,stage_doc_gemini_defeated,stage_doc_spark_defeated,stage_doc_shadow_defeated"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Air)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 1679,
+                "y": 610,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Heat)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_shadow_unlocked",
+            "shadow_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_shadow",
+                "x": 5016,
+                "y": 1573,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_stage_select",
+                "x": 442,
+                "y": 116,
+                "size": 18
+            }
+        ],
+        "sections": [
+            {
+                "name": "Doc Robot (Air) Defeated",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            },
+            {
+                "name": "Doc Robot (Crash) Defeated",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Health Energy 1",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 1152,
+                "y": 1301,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - 1-Up 1",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 1271,
+                "y": 996,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up 1",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - E-Tank 1",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 1247,
+                "y": 854,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank 1",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Weapon Energy 1",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 1928,
+                "y": 677,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Weapon Energy 2",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 2528,
+                "y": 677,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Weapon Energy 3",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 2913,
+                "y": 677,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Weapon Energy 4",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 2880,
+                "y": 580,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 4",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Weapon Energy 5",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 3386,
+                "y": 596,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 5",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Weapon Energy 6",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 3776,
+                "y": 676,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 6",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Weapon Energy 7",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 3787,
+                "y": 404,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 7",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Needle) - Health Energy 2",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 5624,
+                "y": 101,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Flash)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_gemini_unlocked",
+            "gemini_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_gemini",
+                "x": 3983,
+                "y": 600,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "stage_doc_gemini_unlocked",
+                    "gemini_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Quick)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_spark_unlocked",
+            "spark_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_spark",
+                "x": 4498,
+                "y": 1094,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "stage_doc_spark_unlocked",
+                    "spark_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Gemini)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_gemini_unlocked",
+            "gemini_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_stage_select",
+                "x": 124,
+                "y": 370,
+                "size": 18
+            }
+        ],
+        "sections": [
+            {
+                "name": "Doc Robot (Flash) Defeated",
+                "access_rules": [
+                    "stage_doc_gemini_unlocked",
+                    "gemini_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            },
+            {
+                "name": "Doc Robot (Bubble) Defeated",
+                "access_rules": [
+                    "stage_doc_gemini_unlocked",
+                    "gemini_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Gemini) - Mystery Tank 1",
+        "access_rules": [
+            "stage_doc_gemini_unlocked",
+            "gemini_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_gemini",
+                "x": 2408,
+                "y": 309,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 1",
+                "access_rules": [
+                    "stage_doc_gemini_unlocked",
+                    "gemini_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Gemini) - Mystery Tank 2",
+        "access_rules": [
+            "stage_doc_gemini_unlocked",
+            "gemini_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_gemini",
+                "x": 2727,
+                "y": 308,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 2",
+                "access_rules": [
+                    "stage_doc_gemini_unlocked",
+                    "gemini_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Gemini) - Weapon Energy 1",
+        "access_rules": [
+            "stage_doc_gemini_unlocked",
+            "gemini_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_gemini",
+                "x": 4873,
+                "y": 548,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "stage_doc_gemini_unlocked",
+                    "gemini_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Gemini) - Weapon Energy 2",
+        "access_rules": [
+            "stage_doc_gemini_unlocked",
+            "gemini_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_gemini",
+                "x": 5143,
+                "y": 548,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "stage_doc_gemini_unlocked",
+                    "gemini_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Wood)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_shadow_unlocked",
+            "shadow_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_shadow",
+                "x": 2448,
+                "y": 1581,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Crash)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_needle_unlocked",
+            "needle_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_needle",
+                "x": 6286,
+                "y": 131,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "stage_doc_needle_unlocked",
+                    "needle_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Spark)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_spark_unlocked",
+            "spark_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_stage_select",
+                "x": 123,
+                "y": 115,
+                "size": 18
+            }
+        ],
+        "sections": [
+            {
+                "name": "Doc Robot (Metal) Defeated",
+                "access_rules": [
+                    "stage_doc_spark_unlocked",
+                    "spark_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            },
+            {
+                "name": "Doc Robot (Quick) Defeated",
+                "access_rules": [
+                    "stage_doc_spark_unlocked",
+                    "spark_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Spark) - Health Energy 1",
+        "access_rules": [
+            "stage_doc_spark_unlocked",
+            "spark_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_spark",
+                "x": 352,
+                "y": 564,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "stage_doc_spark_unlocked",
+                    "spark_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Spark) - Health Energy 2",
+        "access_rules": [
+            "stage_doc_spark_unlocked",
+            "spark_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_spark",
+                "x": 2151,
+                "y": 165,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "stage_doc_spark_unlocked",
+                    "spark_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Bubble)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_gemini_unlocked",
+            "gemini_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_gemini",
+                "x": 6541,
+                "y": 853,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "stage_doc_gemini_unlocked",
+                    "gemini_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Metal)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_spark_unlocked",
+            "spark_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_spark",
+                "x": 1929,
+                "y": 132,
+                "size": 26,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "stage_doc_spark_unlocked",
+                    "spark_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Shadow)",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "stage_doc_shadow_unlocked",
+            "shadow_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_stage_select",
+                "x": 442,
+                "y": 370,
+                "size": 18
+            }
+        ],
+        "sections": [
+            {
+                "name": "Doc Robot (Wood) Defeated",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            },
+            {
+                "name": "Doc Robot (Heat) Defeated",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Shadow) - Health Energy 1",
+        "access_rules": [
+            "stage_doc_shadow_unlocked",
+            "shadow_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_shadow",
+                "x": 2729,
+                "y": 1637,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Shadow) - Weapon Energy 1",
+        "access_rules": [
+            "stage_doc_shadow_unlocked",
+            "shadow_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_shadow",
+                "x": 4245,
+                "y": 1639,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Shadow) - Weapon Energy 2",
+        "access_rules": [
+            "stage_doc_shadow_unlocked",
+            "shadow_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_shadow",
+                "x": 4259,
+                "y": 1639,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Shadow) - Weapon Energy 3",
+        "access_rules": [
+            "stage_doc_shadow_unlocked",
+            "shadow_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_shadow",
+                "x": 4276,
+                "y": 1639,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Doc Robot (Shadow) - Weapon Energy 4",
+        "access_rules": [
+            "stage_doc_shadow_unlocked",
+            "shadow_man_2"
+        ],
+        "map_locations": [
+            {
+                "map": "doc_shadow",
+                "x": 4295,
+                "y": 1639,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 4",
+                "access_rules": [
+                    "stage_doc_shadow_unlocked",
+                    "shadow_man_2"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Kamegoro Maker",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 2400,
+                "y": 302,
+                "size": 20,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_stage_select",
+                "x": 955,
+                "y": 744,
+                "size": 24
+            }
+        ],
+        "sections": [
+            {
+                "name": "Wily Stage 1",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - 1-Up 1",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 56,
+                "y": 1145,
+                "size": 24,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up 1",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - E-Tank 1",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 1000,
+                "y": 1160,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank 1",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - Weapon Energy 1",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 1330,
+                "y": 1370,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - 1-Up 2",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 1664,
+                "y": 1128,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up 2",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - Health Energy 1",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 1766,
+                "y": 918,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - Weapon Energy 2",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 1673,
+                "y": 855,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - Health Energy 2",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 1652,
+                "y": 855,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - E-Tank 2",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 1664,
+                "y": 791,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank 2",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - Health Energy 3",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 2170,
+                "y": 326,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 3",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - Health Energy 4",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 2149,
+                "y": 326,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 4",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - Weapon Energy 3",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 2263,
+                "y": 101,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 1 - Weapon Energy 4",
+        "access_rules": [
+            "break_man_1"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_1",
+                "x": 2279,
+                "y": 101,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 4",
+                "access_rules": [
+                    "break_man_1"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Yellow Devil MK-II",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 2009,
+                "y": 133,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_stage_select",
+                "x": 883,
+                "y": 600,
+                "size": 24
+            }
+        ],
+        "sections": [
+            {
+                "name": "Wily Stage 2",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Weapon Energy 1",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 120,
+                "y": 678,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Weapon Energy 2",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 167,
+                "y": 678,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - 1-Up 1",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 168,
+                "y": 375,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up 1",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Weapon Energy 3",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 983,
+                "y": 167,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Health Energy 1",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1133,
+                "y": 103,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Health Energy 2",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1152,
+                "y": 103,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Health Energy 3",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1167,
+                "y": 103,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 3",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Weapon Energy 4",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1167,
+                "y": 201,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 4",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - E-Tank 1",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1312,
+                "y": 135,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank 1",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Weapon Energy 5",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1440,
+                "y": 103,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 5",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - E-Tank 2",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1440,
+                "y": 199,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank 2",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Weapon Energy 6",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1567,
+                "y": 135,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 6",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 2 - Weapon Energy 7",
+        "access_rules": [
+            "kamegoro_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_2",
+                "x": 1583,
+                "y": 135,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 7",
+                "access_rules": [
+                    "kamegoro_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Holograph Mega Man",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 1421,
+                "y": 119,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_stage_select",
+                "x": 883,
+                "y": 455,
+                "size": 24
+            }
+        ],
+        "sections": [
+            {
+                "name": "Wily Stage 3",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Weapon Energy 1",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 184,
+                "y": 647,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Weapon Energy 2",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 184,
+                "y": 598,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - E-Tank 1",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 192,
+                "y": 454,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank 1",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - 1-Up 1",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 519,
+                "y": 344,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up 1",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Health Energy 1",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 822,
+                "y": 472,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Health Energy 2",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 839,
+                "y": 472,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Health Energy 3",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 854,
+                "y": 472,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 3",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Health Energy 4",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 869,
+                "y": 472,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 4",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Weapon Energy 3",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 889,
+                "y": 440,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Mystery Tank 1",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 1217,
+                "y": 118,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 1",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 3 - Mystery Tank 2",
+        "access_rules": [
+            "yellow_devil_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_3",
+                "x": 1248,
+                "y": 118,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 2",
+                "access_rules": [
+                    "yellow_devil_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_stage_select",
+                "x": 775,
+                "y": 340,
+                "size": 24
+            }
+        ],
+        "sections": [
+            {
+                "name": "Wily Stage 4",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 1",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 168,
+                "y": 54,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 2",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 87,
+                "y": 54,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 3",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 72,
+                "y": 54,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 3",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 4",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 60,
+                "y": 54,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 4",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 5",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 42,
+                "y": 54,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 5",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Health Energy 1",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 88,
+                "y": 467,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 1",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Health Energy 2",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 104,
+                "y": 467,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 2",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Health Energy 3",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 117,
+                "y": 467,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 3",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Health Energy 4",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 131,
+                "y": 467,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy 4",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Mystery Tank",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 117,
+                "y": 506,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 6",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 98,
+                "y": 545,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 6",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - 1-Up",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 814,
+                "y": 1279,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 7",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 477,
+                "y": 1213,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 7",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 8",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 477,
+                "y": 1266,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 8",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 9",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 477,
+                "y": 1317,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 9",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 10",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 529,
+                "y": 1317,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 10",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 11",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 555,
+                "y": 1317,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 11",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 12",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 606,
+                "y": 1317,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 12",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 13",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 606,
+                "y": 1266,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 13",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 4 - Weapon Energy 14",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_4",
+                "x": 605,
+                "y": 1213,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 14",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Machine 3",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_5",
+                "x": 144,
+                "y": 613,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Defeated",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 5",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_stage_select",
+                "x": 595,
+                "y": 195,
+                "size": 24
+            }
+        ],
+        "sections": [
+            {
+                "name": "Wily Stage 5",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 5 - Weapon Energy 1",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_5",
+                "x": 104,
+                "y": 389,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 5 - Weapon Energy 2",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_5",
+                "x": 184,
+                "y": 389,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 5 - Mystery Tank 1",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_5",
+                "x": 58,
+                "y": 358,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 1",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 5 - Mystery Tank 2",
+        "access_rules": [
+            "holograph_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_5",
+                "x": 229,
+                "y": 358,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 2",
+                "access_rules": [
+                    "holograph_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 6",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+        "overlay_background": "#000000",
+        "access_rules": [
+            "wily_machine_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_stage_select",
+                "x": 400,
+                "y": 130,
+                "size": 24
+            }
+        ],
+        "sections": [
+            {
+                "name": "Wily Stage 6",
+                "access_rules": [
+                    "wily_machine_defeated"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 6 - Mystery Tank 1",
+        "access_rules": [
+            "wily_machine_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_6",
+                "x": 366,
+                "y": 200,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 1",
+                "access_rules": [
+                    "wily_machine_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 6 - Mystery Tank 2",
+        "access_rules": [
+            "wily_machine_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_6",
+                "x": 463,
+                "y": 200,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Mystery Tank 2",
+                "access_rules": [
+                    "wily_machine_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 6 - Weapon Energy 1",
+        "access_rules": [
+            "wily_machine_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_6",
+                "x": 366,
+                "y": 167,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 1",
+                "access_rules": [
+                    "wily_machine_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 6 - Weapon Energy 2",
+        "access_rules": [
+            "wily_machine_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_6",
+                "x": 463,
+                "y": 167,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Weapon Energy 2",
+                "access_rules": [
+                    "wily_machine_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 6 - 1-Up",
+        "access_rules": [
+            "wily_machine_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_6",
+                "x": 366,
+                "y": 119,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "1-Up",
+                "access_rules": [
+                    "wily_machine_defeated"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 6 - E-Tank",
+        "access_rules": [
+            "wily_machine_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_6",
+                "x": 360,
+                "y": 55,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "E-Tank",
+                "access_rules": [
+                    "wily_machine_defeated"
+                ],
+                "visibility_rules": [
+                    "{etanks_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    },
+    {
+        "name": "Wily Stage 6 - Health Energy",
+        "access_rules": [
+            "wily_machine_defeated"
+        ],
+        "map_locations": [
+            {
+                "map": "wily_6",
+                "x": 375,
+                "y": 55,
+                "size": 22,
+                "shape": "rect"
+            }
+        ],
+        "sections": [
+            {
+                "name": "Health Energy",
+                "access_rules": [
+                    "wily_machine_defeated"
+                ],
+                "visibility_rules": [
+                    "{energy_on}"
+                ],
+                "item_count": 1
+            }
+        ]
+    }
+]

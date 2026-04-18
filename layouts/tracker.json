@@ -1,35 +1,74 @@
 {
-  "tracker_default": {
-    "type": "container",
-    "background": "#000000",
-    "content": {
-      "type": "dock",
-      "dropshadow": true,
-      "content": [
-        {
-          "type": "dock",
-          "dock": "left",
-          "v_alignment": "stretch",
-          "content": [
-            {
-              "type": "group",
-              "header": "Items",
-              "dock": "top",
-              "content": {
-                "type": "layout",
-                "key": "shared_item_grid"
-              }
-            }
-          ]
-        },
-        {
-          "type": "dock",
-          "content": {
-            "type": "layout",
-            "key": "layouttabs"
-          }
+    "tracker_default": {
+        "type": "container",
+        "background": "#00000000",
+        "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "left",
+                    "v_alignment": "top",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Items",
+                            "dock": "top",
+                            "content": {
+                                "type": "layout",
+                                "key": "shared_item_grid_vertical"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "tabbed_maps_vertical"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
+    },
+    "tracker_horizontal": {
+        "type": "container",
+        "background": "#00000000",
+        "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "left",
+                    "v_alignment": "top",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Items",
+                            "dock": "top",
+                            "content": {
+                                "type": "layout",
+                                "h_alignment": "center",
+                                "v_alignment": "center",
+                                "key": "shared_item_grid_horizontal"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "tabbed_maps_horizontal"
+                        }
+                    ]
+                }
+            ]
+        }
     }
-  }
 }

@@ -1,0 +1,80 @@
+{
+    "tracker_broadcast": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "6,6",
+        "content": [
+            {
+                "type": "group",
+                "header": "Robot Masters & Weapons",
+                "header_background": "#2d4a7a",
+                "content": {
+                    "type": "itemgrid",
+                    "item_margin": "3,3",
+                    "item_width": 42,
+                    "item_height": 42,
+                    "rows": [
+                        [
+                            "needle_man_state",
+                            "magnet_man_state",
+                            "gemini_man_state",
+                            "hard_man_state",
+                            "top_man_state",
+                            "snake_man_state",
+                            "spark_man_state",
+                            "shadow_man_state"
+                        ],
+                        [
+                            "needle_cannon",
+                            "magnet_missile",
+                            "gemini_laser",
+                            "hard_knuckle",
+                            "top_spin",
+                            "search_snake",
+                            "spark_shock",
+                            "shadow_blade"
+                        ]
+                    ]
+                }
+            },
+            {
+                "type": "group",
+                "header": "Doc Robots",
+                "header_background": "#5a2d7a",
+                "content": {
+                    "type": "itemgrid",
+                    "item_margin": "3,3",
+                    "item_width": 42,
+                    "item_height": 42,
+                    "rows": [
+                        [
+                            "stage_doc_needle",
+                            "stage_doc_gemini",
+                            "stage_doc_spark",
+                            "stage_doc_shadow"
+                        ]
+                    ]
+                }
+            },
+            {
+                "type": "group",
+                "header": "Break Man & Rush",
+                "header_background": "#7a3a2d",
+                "content": {
+                    "type": "itemgrid",
+                    "item_margin": "3,3",
+                    "item_width": 42,
+                    "item_height": 42,
+                    "rows": [
+                        [
+                            "break_man_state",
+                            "rush_coil",
+                            "rush_jet",
+                            "rush_marine"
+                        ]
+                    ]
+                }
+            }
+        ]
+    }
+}

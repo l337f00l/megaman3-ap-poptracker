@@ -1,20 +1,23 @@
 {
-  "settings_popup": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
-		"name": "Settings",
-        "type": "itemgrid",
-        "item_margin": "5, 7",
-        "item_size": "200,50",
-        "h_alignment": "left",
-        "rows": [
-          ["etanks_on"],
-          ["energy_on"]
+    "settings_popup": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "4,4",
+        "content": [
+            {
+                "type": "item",
+                "margin": "2,2",
+                "item": "etanks_on",
+                "item_width": 220,
+                "item_height": 64
+            },
+            {
+                "type": "item",
+                "margin": "2,2",
+                "item": "energy_on",
+                "item_width": 220,
+                "item_height": 64
+            }
         ]
-      }
-    ]
-  }
+    }
 }

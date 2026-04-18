@@ -1,0 +1,270 @@
+{
+    "shared_item_grid_vertical": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2,2",
+                        "item_h_alignment": "center",
+                        "item_v_alignment": "center",
+                        "item_height": 42,
+                        "item_width": 42,
+                        "rows": [
+                            [
+                                "spark_man_state",
+                                "snake_man_state",
+                                "needle_man_state"
+                            ],
+                            [
+                                "hard_man_state",
+                                "",
+                                "top_man_state"
+                            ],
+                            [
+                                "gemini_man_state",
+                                "magnet_man_state",
+                                "shadow_man_state"
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "vertical",
+                        "margin": "4,0",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "2,2",
+                                "item_h_alignment": "center",
+                                "item_v_alignment": "center",
+                                "item_height": 42,
+                                "item_width": 42,
+                                "rows": [
+                                    [
+                                        "stage_doc_needle",
+                                        "stage_doc_gemini"
+                                    ],
+                                    [
+                                        "stage_doc_spark",
+                                        "stage_doc_shadow"
+                                    ]
+                                ]
+                            },
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "2,2",
+                                "item_h_alignment": "center",
+                                "item_v_alignment": "center",
+                                "item_height": 42,
+                                "item_width": 42,
+                                "rows": [
+                                    [
+                                        "break_man_state",
+                                        "etank"
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "2,2",
+                "item_h_alignment": "center",
+                "item_v_alignment": "center",
+                "item_height": 36,
+                "item_width": 36,
+                "rows": [
+                    [
+                        "needle_cannon",
+                        "magnet_missile",
+                        "gemini_laser",
+                        "hard_knuckle"
+                    ],
+                    [
+                        "top_spin",
+                        "search_snake",
+                        "spark_shock",
+                        "shadow_blade"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "2,2",
+                "item_h_alignment": "center",
+                "item_v_alignment": "center",
+                "item_height": 36,
+                "item_width": 36,
+                "rows": [
+                    [
+                        "rush_coil",
+                        "rush_jet",
+                        "rush_marine"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "2,2",
+                "item_h_alignment": "center",
+                "item_v_alignment": "center",
+                "item_height": 16,
+                "item_width": 16,
+                "rows": [
+                    [
+                        "update"
+                    ]
+                ]
+            }
+        ]
+    },
+    "shared_item_grid_horizontal": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "2,2",
+                        "item_h_alignment": "center",
+                        "item_v_alignment": "center",
+                        "item_height": 42,
+                        "item_width": 42,
+                        "rows": [
+                            [
+                                "spark_man_state",
+                                "snake_man_state",
+                                "needle_man_state"
+                            ],
+                            [
+                                "hard_man_state",
+                                "",
+                                "top_man_state"
+                            ],
+                            [
+                                "gemini_man_state",
+                                "magnet_man_state",
+                                "shadow_man_state"
+                            ]
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "vertical",
+                        "margin": "4,0",
+                        "content": [
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "2,2",
+                                "item_h_alignment": "center",
+                                "item_v_alignment": "center",
+                                "item_height": 42,
+                                "item_width": 42,
+                                "rows": [
+                                    [
+                                        "stage_doc_needle",
+                                        "stage_doc_gemini"
+                                    ],
+                                    [
+                                        "stage_doc_spark",
+                                        "stage_doc_shadow"
+                                    ]
+                                ]
+                            },
+                            {
+                                "type": "itemgrid",
+                                "item_margin": "2,2",
+                                "item_h_alignment": "center",
+                                "item_v_alignment": "center",
+                                "item_height": 42,
+                                "item_width": 42,
+                                "rows": [
+                                    [
+                                        "break_man_state",
+                                        "etank"
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "2,2",
+                "item_h_alignment": "center",
+                "item_v_alignment": "center",
+                "item_height": 36,
+                "item_width": 36,
+                "rows": [
+                    [
+                        "needle_cannon",
+                        "magnet_missile",
+                        "gemini_laser",
+                        "hard_knuckle"
+                    ],
+                    [
+                        "top_spin",
+                        "search_snake",
+                        "spark_shock",
+                        "shadow_blade"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "2,2",
+                "item_h_alignment": "center",
+                "item_v_alignment": "center",
+                "item_height": 36,
+                "item_width": 36,
+                "rows": [
+                    [
+                        "rush_coil",
+                        "rush_jet",
+                        "rush_marine"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "item_margin": "2,2",
+                "item_h_alignment": "center",
+                "item_v_alignment": "center",
+                "item_height": 16,
+                "item_width": 16,
+                "rows": [
+                    [
+                        "update"
+                    ]
+                ]
+            }
+        ]
+    },
+    "setting_grid": {
+        "type": "itemgrid",
+        "item_margin": "2,2",
+        "item_height": 36,
+        "item_width": 36,
+        "rows": [
+            [
+                "etanks_on",
+                "energy_on"
+            ]
+        ]
+    }
+}
