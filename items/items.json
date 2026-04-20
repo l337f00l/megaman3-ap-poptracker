@@ -511,16 +511,18 @@
   {
     "name": "E-Tanks & 1-Ups In Pool",
     "type": "progressive",
-    "codes": "etanks_on",
     "loop": true,
-    "initial_stage_idx": 1,
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/settings/etanks_on_disabled.png",
-        "codes": ""
+        "name": "E-Tanks & 1-Ups In Pool - Off",
+        "codes": "etanks_on_off",
+        "inherit_codes": false
       },
       {
         "img": "images/settings/etanks_on.png",
+        "name": "E-Tanks & 1-Ups In Pool - On",
         "codes": "etanks_on"
       }
     ]
@@ -528,16 +530,18 @@
   {
     "name": "Weapon & Health Energy In Pool",
     "type": "progressive",
-    "codes": "energy_on",
     "loop": true,
-    "initial_stage_idx": 1,
+    "allow_disabled": false,
     "stages": [
       {
         "img": "images/settings/energy_on_disabled.png",
-        "codes": ""
+        "name": "Weapon & Health Energy In Pool - Off",
+        "codes": "energy_on_off",
+        "inherit_codes": false
       },
       {
         "img": "images/settings/energy_on.png",
+        "name": "Weapon & Health Energy In Pool - On",
         "codes": "energy_on"
       }
     ]
