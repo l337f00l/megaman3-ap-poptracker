@@ -1,6 +1,6 @@
 # Mega Man 3 Archipelago PopTracker Pack
 
-This is a PopTracker pack for Silvris' [Mega Man 3 Archipelago](https://github.com/alwaysintreble/TheMessengerRandomizerModAP). Install it in your PopTracker packs folder.
+This is a PopTracker pack for Silvris' Mega Man 3 Archipelago. Install it in your PopTracker packs folder.
 
 Stage select overview maps for Robot Masters, Doc Robot stages, Break Man, and Wily Fortress, plus individual stage maps showing item locations.
 
@@ -41,10 +41,11 @@ Both settings are **enabled by default**. If your YAML does not include consumab
 
 - **Robot Master stages** unlock when the corresponding access code item is received
 - **Doc Robot stages** unlock when the corresponding Robot Master is defeated OR when the Doc stage access code item is received (handles both shuffled and unshuffled seeds)
-- **Break Man** requires all 8 Robot Masters defeated AND all 4 Doc Robot stages completed
+- **Break Man** all 4 Doc Robot stages completed
 - **Wily Stage 1** unlocks when Break Man is defeated
 - **Wily Stages 2–6** unlock sequentially as each Wily boss is defeated
 - **Wily Stage 4** (Robot Master refights) unlocks alongside Wily Stage 5 since it has no boss check of its own
+- **Wily Stage 1 and 3** Hard Knuckle is now checked and items will show up Red if Hard Knuckle hasn't been received yet.
 
 ---
 
