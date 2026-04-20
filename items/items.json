@@ -414,7 +414,7 @@
     "disabled_img": "images/items/etank_disabled.png",
     "codes": "etank",
     "initial_quantity": 0,
-    "max_quantity": 20,
+    "max_quantity": 9999,
     "increment": 1
   },
   {

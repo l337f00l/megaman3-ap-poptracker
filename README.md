@@ -1,6 +1,6 @@
 # Mega Man 3 Archipelago PopTracker Pack
 
-This is a PopTracker pack for Silvris Mega Man 3 Archipelago. Install it in your PopTracker packs folder.
+This is a PopTracker pack for Silvris' [Mega Man 3 Archipelago](https://github.com/alwaysintreble/TheMessengerRandomizerModAP). Install it in your PopTracker packs folder.
 
 Stage select overview maps for Robot Masters, Doc Robot stages, Break Man, and Wily Fortress, plus individual stage maps showing item locations.
 
