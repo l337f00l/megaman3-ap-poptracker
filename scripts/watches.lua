@@ -191,26 +191,6 @@ function syncStatesFromLocations()
         end
     end
 
-    -- Doc stage accessible sync (stage 1 = unlocked)
-    -- If the corresponding robot master is defeated, the doc stage should be accessible
-    -- This handles seeds where doc stages are NOT shuffled (no access code items)
-    local DOC_RM_PAIRS = {
-        {rm = "needle_man_state", doc = "stage_doc_needle"},
-        {rm = "gemini_man_state", doc = "stage_doc_gemini"},
-        {rm = "spark_man_state",  doc = "stage_doc_spark"},
-        {rm = "shadow_man_state", doc = "stage_doc_shadow"},
-    }
-    for _, pair in ipairs(DOC_RM_PAIRS) do
-        local rm_obj = Tracker:FindObjectForCode(pair.rm)
-        local doc_obj = Tracker:FindObjectForCode(pair.doc)
-        if rm_obj and doc_obj then
-            -- If RM is defeated (stage 2), ensure doc stage is at least accessible (stage 1)
-            if rm_obj.CurrentStage >= 2 and doc_obj.CurrentStage < 1 then
-                doc_obj.CurrentStage = 1
-            end
-        end
-    end
-
     -- Wily boss toggles
     for path, code in pairs(WILY_BOSS_TO_CODE) do
         local loc = Tracker:FindObjectForCode("@" .. path)
