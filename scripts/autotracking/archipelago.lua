@@ -236,11 +236,13 @@ function onClear(slot_data)
                     if location:sub(1, 1) == "@" then
                         local section_obj = getLocationSection(location_obj)
                         if section_obj then
-                            if custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED][location_obj.FullID] then
-                                section_obj.AvailableChestCount = custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED][location_obj.FullID]
-                            else
-                                section_obj.AvailableChestCount = section_obj.ChestCount
-                            end
+                            pcall(function()
+                                if custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED][location_obj.FullID] then
+                                    section_obj.AvailableChestCount = custom_storage_item.MANUAL_LOCATIONS[ROOM_SEED][location_obj.FullID]
+                                else
+                                    section_obj.AvailableChestCount = section_obj.ChestCount
+                                end
+                            end)
                         end
                     else
                         location_obj.Active = false
@@ -296,6 +298,23 @@ function onClear(slot_data)
         HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
         Archipelago:SetNotify({HINTS_ID})
         Archipelago:Get({HINTS_ID})
+
+        -- Auto-detect settings from which location IDs are in the pool
+        local etank_id = 513       -- Needle Man E-Tank
+        local energy_id = 512      -- Needle Man Weapon Energy
+        local etanks_enabled = 0
+        local energy_enabled = 0
+        for _, i in ipairs(Archipelago.CheckedLocations) do
+            if i == etank_id then etanks_enabled = 1 end
+            if i == energy_id then energy_enabled = 1 end
+        end
+        for _, i in ipairs(Archipelago.MissingLocations) do
+            if i == etank_id then etanks_enabled = 1 end
+            if i == energy_id then energy_enabled = 1 end
+        end
+        -- Stage 1 = On (green), Stage 0 = Off (red)
+        Tracker:FindObjectForCode("etanks_on").CurrentStage = etanks_enabled
+        Tracker:FindObjectForCode("energy_on").CurrentStage = energy_enabled
     end
     ScriptHost:AddOnFrameHandler("load handler", OnFrameHandler)
     MANUAL_CHECKED = true

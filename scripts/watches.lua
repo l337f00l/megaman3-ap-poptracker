@@ -98,6 +98,12 @@ local WILY_BOSS_TO_CODE = {
     ["Yellow Devil MK-II/Defeated"] = "yellow_devil_defeated",
     ["Holograph Mega Man/Defeated"] = "holograph_defeated",
     ["Wily Machine 3/Defeated"]    = "wily_machine_defeated",
+    -- Overview group paths (autotracked via location_mapping dual targets)
+    ["Wily Stage Select Overview/Wily Stage 1/Wily Stage 1"] = "kamegoro_defeated",
+    ["Wily Stage Select Overview/Wily Stage 2/Wily Stage 2"] = "yellow_devil_defeated",
+    ["Wily Stage Select Overview/Wily Stage 3/Wily Stage 3"] = "holograph_defeated",
+    ["Wily Stage Select Overview/Wily Stage 4/Wily Stage 4"] = "holograph_defeated",
+    ["Wily Stage Select Overview/Wily Stage 5/Wily Stage 5"] = "wily_machine_defeated",
 }
 
 ScriptHost:AddOnLocationSectionChangedHandler("wily_boss_sync", function(location)

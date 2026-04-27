@@ -1675,7 +1675,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "hard_man_1"
+      "hard_man_1,rush_coil",
+      "hard_man_1,rush_jet"
     ],
     "map_locations": [
       {
@@ -1690,7 +1691,8 @@
       {
         "name": "Health Energy 2",
         "access_rules": [
-          "hard_man_1"
+          "hard_man_1,rush_coil",
+          "hard_man_1,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -1705,7 +1707,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "hard_man_1"
+      "hard_man_1,rush_coil",
+      "hard_man_1,rush_jet"
     ],
     "map_locations": [
       {
@@ -1720,7 +1723,8 @@
       {
         "name": "E-Tank",
         "access_rules": [
-          "hard_man_1"
+          "hard_man_1,rush_coil",
+          "hard_man_1,rush_jet"
         ],
         "visibility_rules": [
           "{etanks_on}"
@@ -1735,7 +1739,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "hard_man_1"
+      "hard_man_1,rush_coil",
+      "hard_man_1,rush_jet"
     ],
     "map_locations": [
       {
@@ -1750,7 +1755,8 @@
       {
         "name": "Health Energy 3",
         "access_rules": [
-          "hard_man_1"
+          "hard_man_1,rush_coil",
+          "hard_man_1,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -1765,7 +1771,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "hard_man_1"
+      "hard_man_1,rush_coil",
+      "hard_man_1,rush_jet"
     ],
     "map_locations": [
       {
@@ -1780,7 +1787,8 @@
       {
         "name": "Health Energy 4",
         "access_rules": [
-          "hard_man_1"
+          "hard_man_1,rush_coil",
+          "hard_man_1,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -1795,7 +1803,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "hard_man_1"
+      "hard_man_1,rush_coil",
+      "hard_man_1,rush_jet"
     ],
     "map_locations": [
       {
@@ -1810,7 +1819,8 @@
       {
         "name": "Health Energy 5",
         "access_rules": [
-          "hard_man_1"
+          "hard_man_1,rush_coil",
+          "hard_man_1,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -1825,7 +1835,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "hard_man_1"
+      "hard_man_1,rush_coil",
+      "hard_man_1,rush_jet"
     ],
     "map_locations": [
       {
@@ -1840,7 +1851,8 @@
       {
         "name": "Health Energy 6",
         "access_rules": [
-          "hard_man_1"
+          "hard_man_1,rush_coil",
+          "hard_man_1,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2555,7 +2567,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked"
+      "stage_doc_needle_unlocked,rush_coil",
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2570,7 +2583,8 @@
       {
         "name": "Health Energy 1",
         "access_rules": [
-          "stage_doc_needle_unlocked"
+          "stage_doc_needle_unlocked,rush_coil",
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2585,7 +2599,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked"
+      "stage_doc_needle_unlocked,rush_coil",
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2600,7 +2615,8 @@
       {
         "name": "1-Up 1",
         "access_rules": [
-          "stage_doc_needle_unlocked"
+          "stage_doc_needle_unlocked,rush_coil",
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{etanks_on}"
@@ -2615,7 +2631,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked"
+      "stage_doc_needle_unlocked,rush_coil",
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2630,7 +2647,8 @@
       {
         "name": "E-Tank 1",
         "access_rules": [
-          "stage_doc_needle_unlocked"
+          "stage_doc_needle_unlocked,rush_coil",
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{etanks_on}"
@@ -2645,7 +2663,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked"
+      "stage_doc_needle_unlocked,rush_coil",
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2660,7 +2679,8 @@
       {
         "name": "Weapon Energy 1",
         "access_rules": [
-          "stage_doc_needle_unlocked"
+          "stage_doc_needle_unlocked,rush_coil",
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2675,8 +2695,7 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked,rush_jet",
-      "needle_man_2,rush_jet"
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2691,8 +2710,7 @@
       {
         "name": "Weapon Energy 2",
         "access_rules": [
-          "stage_doc_needle_unlocked,rush_jet",
-          "needle_man_2,rush_jet"
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2707,8 +2725,7 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked,rush_jet",
-      "needle_man_2,rush_jet"
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2723,8 +2740,7 @@
       {
         "name": "Weapon Energy 3",
         "access_rules": [
-          "stage_doc_needle_unlocked,rush_jet",
-          "needle_man_2,rush_jet"
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2739,8 +2755,7 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked,rush_jet",
-      "needle_man_2,rush_jet"
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2755,8 +2770,7 @@
       {
         "name": "Weapon Energy 4",
         "access_rules": [
-          "stage_doc_needle_unlocked,rush_jet",
-          "needle_man_2,rush_jet"
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2771,8 +2785,7 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked,rush_jet",
-      "needle_man_2,rush_jet"
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2787,8 +2800,7 @@
       {
         "name": "Weapon Energy 5",
         "access_rules": [
-          "stage_doc_needle_unlocked,rush_jet",
-          "needle_man_2,rush_jet"
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2803,8 +2815,7 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked,rush_jet",
-      "needle_man_2,rush_jet"
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2819,8 +2830,7 @@
       {
         "name": "Weapon Energy 6",
         "access_rules": [
-          "stage_doc_needle_unlocked,rush_jet",
-          "needle_man_2,rush_jet"
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2835,8 +2845,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked,rush_jet",
-      "needle_man_2,rush_jet"
+      "stage_doc_needle_unlocked,rush_coil",
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2851,8 +2861,8 @@
       {
         "name": "Weapon Energy 7",
         "access_rules": [
-          "stage_doc_needle_unlocked,rush_jet",
-          "needle_man_2,rush_jet"
+          "stage_doc_needle_unlocked,rush_coil",
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2867,7 +2877,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "stage_doc_needle_unlocked"
+      "stage_doc_needle_unlocked,rush_coil",
+      "stage_doc_needle_unlocked,rush_jet"
     ],
     "map_locations": [
       {
@@ -2882,7 +2893,8 @@
       {
         "name": "Health Energy 2",
         "access_rules": [
-          "stage_doc_needle_unlocked"
+          "stage_doc_needle_unlocked,rush_coil",
+          "stage_doc_needle_unlocked,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -5554,7 +5566,8 @@
           {
             "name": "Health Energy 2",
             "access_rules": [
-              "hard_man_1"
+              "hard_man_1,rush_coil",
+              "hard_man_1,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -5564,7 +5577,8 @@
           {
             "name": "E-Tank",
             "access_rules": [
-              "hard_man_1"
+              "hard_man_1,rush_coil",
+              "hard_man_1,rush_jet"
             ],
             "visibility_rules": [
               "{etanks_on}"
@@ -5574,7 +5588,8 @@
           {
             "name": "Health Energy 3",
             "access_rules": [
-              "hard_man_1"
+              "hard_man_1,rush_coil",
+              "hard_man_1,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -5584,7 +5599,8 @@
           {
             "name": "Health Energy 4",
             "access_rules": [
-              "hard_man_1"
+              "hard_man_1,rush_coil",
+              "hard_man_1,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -5594,7 +5610,8 @@
           {
             "name": "Health Energy 5",
             "access_rules": [
-              "hard_man_1"
+              "hard_man_1,rush_coil",
+              "hard_man_1,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -5604,7 +5621,8 @@
           {
             "name": "Health Energy 6",
             "access_rules": [
-              "hard_man_1"
+              "hard_man_1,rush_coil",
+              "hard_man_1,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -5990,7 +6008,8 @@
           {
             "name": "Health Energy 1",
             "access_rules": [
-              "stage_doc_needle_unlocked"
+              "stage_doc_needle_unlocked,rush_coil",
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -6000,7 +6019,8 @@
           {
             "name": "1-Up 1",
             "access_rules": [
-              "stage_doc_needle_unlocked"
+              "stage_doc_needle_unlocked,rush_coil",
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{etanks_on}"
@@ -6010,7 +6030,8 @@
           {
             "name": "E-Tank 1",
             "access_rules": [
-              "stage_doc_needle_unlocked"
+              "stage_doc_needle_unlocked,rush_coil",
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{etanks_on}"
@@ -6020,7 +6041,8 @@
           {
             "name": "Weapon Energy 1",
             "access_rules": [
-              "stage_doc_needle_unlocked"
+              "stage_doc_needle_unlocked,rush_coil",
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -6030,8 +6052,7 @@
           {
             "name": "Weapon Energy 2",
             "access_rules": [
-              "stage_doc_needle_unlocked,rush_jet",
-              "needle_man_2,rush_jet"
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -6041,8 +6062,7 @@
           {
             "name": "Weapon Energy 3",
             "access_rules": [
-              "stage_doc_needle_unlocked,rush_jet",
-              "needle_man_2,rush_jet"
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -6052,8 +6072,7 @@
           {
             "name": "Weapon Energy 4",
             "access_rules": [
-              "stage_doc_needle_unlocked,rush_jet",
-              "needle_man_2,rush_jet"
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -6063,8 +6082,7 @@
           {
             "name": "Weapon Energy 5",
             "access_rules": [
-              "stage_doc_needle_unlocked,rush_jet",
-              "needle_man_2,rush_jet"
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -6074,8 +6092,7 @@
           {
             "name": "Weapon Energy 6",
             "access_rules": [
-              "stage_doc_needle_unlocked,rush_jet",
-              "needle_man_2,rush_jet"
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -6085,8 +6102,8 @@
           {
             "name": "Weapon Energy 7",
             "access_rules": [
-              "stage_doc_needle_unlocked,rush_jet",
-              "needle_man_2,rush_jet"
+              "stage_doc_needle_unlocked,rush_coil",
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -6096,7 +6113,8 @@
           {
             "name": "Health Energy 2",
             "access_rules": [
-              "stage_doc_needle_unlocked"
+              "stage_doc_needle_unlocked,rush_coil",
+              "stage_doc_needle_unlocked,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
