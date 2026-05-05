@@ -2269,7 +2269,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "spark_man_1"
+      "spark_man_1,rush_coil",
+      "spark_man_1,rush_jet"
     ],
     "map_locations": [
       {
@@ -2284,7 +2285,8 @@
       {
         "name": "Health Energy 1",
         "access_rules": [
-          "spark_man_1"
+          "spark_man_1,rush_coil",
+          "spark_man_1,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -2299,7 +2301,8 @@
     "chest_opened_img": "/images/items/open.png",
     "overlay_background": "#000000",
     "access_rules": [
-      "spark_man_1"
+      "spark_man_1,rush_coil",
+      "spark_man_1,rush_jet"
     ],
     "map_locations": [
       {
@@ -2314,7 +2317,8 @@
       {
         "name": "Weapon Energy 1",
         "access_rules": [
-          "spark_man_1"
+          "spark_man_1,rush_coil",
+          "spark_man_1,rush_jet"
         ],
         "visibility_rules": [
           "{energy_on}"
@@ -5847,7 +5851,8 @@
           {
             "name": "Health Energy 1",
             "access_rules": [
-              "spark_man_1"
+              "spark_man_1,rush_coil",
+              "spark_man_1,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
@@ -5857,7 +5862,8 @@
           {
             "name": "Weapon Energy 1",
             "access_rules": [
-              "spark_man_1"
+              "spark_man_1,rush_coil",
+              "spark_man_1,rush_jet"
             ],
             "visibility_rules": [
               "{energy_on}"
